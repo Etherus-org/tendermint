@@ -8,6 +8,7 @@ BREAKING CHANGES:
 - [p2p] Remove salsa and ripemd primitives, in favor of using chacha as a stream cipher, and hkdf
 - [abci] Changed time format from int64 to google.protobuf.Timestamp
 - [abci] Added address of the original proposer of the block to Header.
+- [abci] Change ABCI Header to match Tendermint exactly
 
 FEATURES:
 - [tools] Added `make check_dep`
