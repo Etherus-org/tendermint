@@ -3,7 +3,7 @@ Genesis
 
 The genesis.json file in ``$TMHOME`` defines the initial TendermintCore
 state upon genesis of the blockchain (`see
-definition <https://github.com/tendermint/tendermint/blob/master/types/genesis.go>`__).
+definition <https://github.com/ya-enot/tendermint/blob/master/types/genesis.go>`__).
 
 NOTE: This does not (yet) specify the application state (e.g. initial
 distribution of tokens). Currently we leave it up to the application to

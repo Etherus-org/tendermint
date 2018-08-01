@@ -11,10 +11,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/types"
-	auto "github.com/tendermint/tmlibs/autofile"
-	cmn "github.com/tendermint/tmlibs/common"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/types"
+	auto "github.com/ya-enot/tmlibs/autofile"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 const (

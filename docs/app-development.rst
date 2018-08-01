@@ -59,7 +59,7 @@ The message protocol consists of pairs of requests and responses. Some
 messages have no fields, while others may include byte-arrays, strings,
 or integers. See the ``message Request`` and ``message Response``
 definitions in `the protobuf definition
-file <https://github.com/tendermint/abci/blob/master/types/types.proto>`__,
+file <https://github.com/ya-enot/abci/blob/master/types/types.proto>`__,
 and the `protobuf
 documentation <https://developers.google.com/protocol-buffers/docs/overview>`__
 for more details.
@@ -83,9 +83,9 @@ Both can be tested using the ``abci-cli`` by setting the ``--abci`` flag
 appropriately (ie. to ``socket`` or ``grpc``).
 
 See examples, in various stages of maintenance, in
-`Go <https://github.com/tendermint/abci/tree/master/server>`__,
+`Go <https://github.com/ya-enot/abci/tree/master/server>`__,
 `JavaScript <https://github.com/tendermint/js-abci>`__,
-`Python <https://github.com/tendermint/abci/tree/master/example/python3/abci>`__,
+`Python <https://github.com/ya-enot/abci/tree/master/example/python3/abci>`__,
 `C++ <https://github.com/mdyring/cpp-tmsp>`__, and
 `Java <https://github.com/jTendermint/jabci>`__.
 
@@ -96,7 +96,7 @@ If GRPC is available in your language, this is the easiest approach,
 though it will have significant performance overhead.
 
 To get started with GRPC, copy in the `protobuf
-file <https://github.com/tendermint/abci/blob/master/types/types.proto>`__
+file <https://github.com/ya-enot/abci/blob/master/types/types.proto>`__
 and compile it using the GRPC plugin for your language. For instance,
 for golang, the command is
 ``protoc --go_out=plugins=grpc:. types.proto``. See the `grpc
@@ -140,12 +140,12 @@ received or a block is committed.
 
 It is unlikely that you will need to implement a client. For details of
 our client, see
-`here <https://github.com/tendermint/abci/tree/master/client>`__.
+`here <https://github.com/ya-enot/abci/tree/master/client>`__.
 
 Most of the examples below are from `dummy application
-<https://github.com/tendermint/abci/blob/master/example/dummy/dummy.go>`__,
+<https://github.com/ya-enot/abci/blob/master/example/dummy/dummy.go>`__,
 which is a part of the abci repo. `persistent_dummy application
-<https://github.com/tendermint/abci/blob/master/example/dummy/persistent_dummy.go>`__
+<https://github.com/ya-enot/abci/blob/master/example/dummy/persistent_dummy.go>`__
 is used to show ``BeginBlock``, ``EndBlock`` and ``InitChain``
 example implementations.
 
@@ -411,7 +411,7 @@ one, include it in the list with a ``power`` equal to ``0``. Tendermint core
 will take care of updating the validator set. Note the change in voting power
 must be strictly less than 1/3 per block. Otherwise it will be impossible for a
 light client to prove the transition externally. See the `light client docs
-<https://godoc.org/github.com/tendermint/tendermint/lite#hdr-How_We_Track_Validators>`__
+<https://godoc.org/github.com/ya-enot/tendermint/lite#hdr-How_We_Track_Validators>`__
 for details on how it tracks validators. Tendermint core will fail with an
 error if the change in voting power is more or equal than 1/3.
 

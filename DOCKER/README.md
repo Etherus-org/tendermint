@@ -1,16 +1,16 @@
 # Supported tags and respective `Dockerfile` links
 
-- `0.13.0`, `latest` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/a28b3fff49dce2fb31f90abb2fc693834e0029c2/DOCKER/Dockerfile)
-- `0.12.1` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/457c688346b565e90735431619ca3ca597ef9007/DOCKER/Dockerfile)
-- `0.12.0` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/70d8afa6e952e24c573ece345560a5971bf2cc0e/DOCKER/Dockerfile)
-- `0.11.0` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/9177cc1f64ca88a4a0243c5d1773d10fba67e201/DOCKER/Dockerfile)
-- `0.10.0` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/e5342f4054ab784b2cd6150e14f01053d7c8deb2/DOCKER/Dockerfile)
-- `0.9.1`, `0.9`, [(Dockerfile)](https://github.com/tendermint/tendermint/blob/809e0e8c5933604ba8b2d096803ada7c5ec4dfd3/DOCKER/Dockerfile)
-- `0.9.0` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/d474baeeea6c22b289e7402449572f7c89ee21da/DOCKER/Dockerfile)
-- `0.8.0`, `0.8` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/bf64dd21fdb193e54d8addaaaa2ecf7ac371de8c/DOCKER/Dockerfile)
-- `develop` [(Dockerfile)](https://github.com/tendermint/tendermint/blob/master/DOCKER/Dockerfile.develop)
+- `0.13.0`, `latest` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/a28b3fff49dce2fb31f90abb2fc693834e0029c2/DOCKER/Dockerfile)
+- `0.12.1` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/457c688346b565e90735431619ca3ca597ef9007/DOCKER/Dockerfile)
+- `0.12.0` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/70d8afa6e952e24c573ece345560a5971bf2cc0e/DOCKER/Dockerfile)
+- `0.11.0` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/9177cc1f64ca88a4a0243c5d1773d10fba67e201/DOCKER/Dockerfile)
+- `0.10.0` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/e5342f4054ab784b2cd6150e14f01053d7c8deb2/DOCKER/Dockerfile)
+- `0.9.1`, `0.9`, [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/809e0e8c5933604ba8b2d096803ada7c5ec4dfd3/DOCKER/Dockerfile)
+- `0.9.0` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/d474baeeea6c22b289e7402449572f7c89ee21da/DOCKER/Dockerfile)
+- `0.8.0`, `0.8` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/bf64dd21fdb193e54d8addaaaa2ecf7ac371de8c/DOCKER/Dockerfile)
+- `develop` [(Dockerfile)](https://github.com/ya-enot/tendermint/blob/master/DOCKER/Dockerfile.develop)
 
-`develop` tag points to the [develop](https://github.com/tendermint/tendermint/tree/develop) branch.
+`develop` tag points to the [develop](https://github.com/ya-enot/tendermint/tree/develop) branch.
 
 # Quick reference
 
@@ -18,7 +18,7 @@
   https://tendermint.com/community
 
 * **Where to file issues:**
-  https://github.com/tendermint/tendermint/issues
+  https://github.com/ya-enot/tendermint/issues
 
 * **Supported Docker versions:**
   [the latest release](https://github.com/moby/moby/releases) (down to 1.6 on a best-effort basis)
@@ -38,8 +38,8 @@ To get started developing applications, see the [application developers guide](h
 A very simple example of a built-in app and Tendermint core in one container.
 
 ```
-docker run -it --rm -v "/tmp:/tendermint" tendermint/tendermint init
-docker run -it --rm -v "/tmp:/tendermint" tendermint/tendermint node --proxy_app=dummy
+docker run -it --rm -v "/tmp:/tendermint" ya-enot/tendermint init
+docker run -it --rm -v "/tmp:/tendermint" ya-enot/tendermint node --proxy_app=dummy
 ```
 
 ## mintnet-kubernetes
@@ -48,7 +48,7 @@ If you want to see many containers talking to each other, consider using [mintne
 
 # License
 
-View [license information](https://raw.githubusercontent.com/tendermint/tendermint/master/LICENSE) for the software contained in this image.
+View [license information](https://raw.githubusercontent.com/ya-enot/tendermint/master/LICENSE) for the software contained in this image.
 
 # User Feedback
 
@@ -56,4 +56,4 @@ View [license information](https://raw.githubusercontent.com/tendermint/tendermi
 
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
 
-Before you start to code, we recommend discussing your plans through a [GitHub](https://github.com/tendermint/tendermint/issues) issue, especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
+Before you start to code, we recommend discussing your plans through a [GitHub](https://github.com/ya-enot/tendermint/issues) issue, especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.

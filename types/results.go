@@ -1,10 +1,10 @@
 package types
 
 import (
-	abci "github.com/tendermint/abci/types"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/go-wire/data"
-	"github.com/tendermint/tmlibs/merkle"
+	abci "github.com/ya-enot/abci/types"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 //-----------------------------------------------------------------------------

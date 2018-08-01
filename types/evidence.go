@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/tendermint/go-crypto"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tmlibs/merkle"
+	"github.com/ya-enot/go-crypto"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 // ErrEvidenceInvalid wraps a piece of evidence and the error denoting how or why it is invalid.

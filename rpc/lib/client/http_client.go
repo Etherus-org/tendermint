@@ -13,7 +13,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	types "github.com/tendermint/tendermint/rpc/lib/types"
+	types "github.com/ya-enot/tendermint/rpc/lib/types"
 )
 
 // HTTPClient is a common interface for JSONRPCClient and URIClient.

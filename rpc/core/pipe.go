@@ -3,16 +3,16 @@ package core
 import (
 	"time"
 
-	crypto "github.com/tendermint/go-crypto"
-	"github.com/tendermint/tendermint/consensus"
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	p2p "github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
-	dbm "github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/log"
+	crypto "github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/tendermint/consensus"
+	cstypes "github.com/ya-enot/tendermint/consensus/types"
+	p2p "github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/proxy"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/state/txindex"
+	"github.com/ya-enot/tendermint/types"
+	dbm "github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 var subscribeTimeout = 5 * time.Second

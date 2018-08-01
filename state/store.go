@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"fmt"
 
-	abci "github.com/tendermint/abci/types"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	dbm "github.com/tendermint/tmlibs/db"
+	abci "github.com/ya-enot/abci/types"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	dbm "github.com/ya-enot/tmlibs/db"
 )
 
 //------------------------------------------------------------------------

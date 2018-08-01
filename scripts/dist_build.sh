@@ -11,7 +11,7 @@ cd "$DIR"
 
 # Get the git commit
 GIT_COMMIT="$(git rev-parse --short HEAD)"
-GIT_IMPORT="github.com/tendermint/tendermint/version"
+GIT_IMPORT="github.com/ya-enot/tendermint/version"
 
 # Determine the arch/os combos we're building for
 XC_ARCH=${XC_ARCH:-"386 amd64 arm"}
@@ -34,7 +34,7 @@ echo "==> Building..."
 		-ldflags "-s -w -X ${GIT_IMPORT}.GitCommit=${GIT_COMMIT}" \
 		-output "build/pkg/{{.OS}}_{{.Arch}}/tendermint" \
 		-tags="${BUILD_TAGS}" \
-		github.com/tendermint/tendermint/cmd/tendermint
+		github.com/ya-enot/tendermint/cmd/tendermint
 
 # Zip all the files.
 echo "==> Packaging..."

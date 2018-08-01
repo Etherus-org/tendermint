@@ -17,11 +17,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/go-wire/data"
-	client "github.com/tendermint/tendermint/rpc/lib/client"
-	server "github.com/tendermint/tendermint/rpc/lib/server"
-	types "github.com/tendermint/tendermint/rpc/lib/types"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/go-wire/data"
+	client "github.com/ya-enot/tendermint/rpc/lib/client"
+	server "github.com/ya-enot/tendermint/rpc/lib/server"
+	types "github.com/ya-enot/tendermint/rpc/lib/types"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 // Client and Server should work over tcp or unix sockets

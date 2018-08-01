@@ -1,12 +1,12 @@
 package proxy
 
 import (
-	"github.com/tendermint/go-wire/data"
+	"github.com/ya-enot/go-wire/data"
 
-	"github.com/tendermint/tendermint/lite"
-	certclient "github.com/tendermint/tendermint/lite/client"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/lite"
+	certclient "github.com/ya-enot/tendermint/lite/client"
+	rpcclient "github.com/ya-enot/tendermint/rpc/client"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
 )
 
 var _ rpcclient.Client = Wrapper{}

@@ -3,7 +3,7 @@ set -e
 
 # set glide.lock path
 if [[ "$GLIDE" == "" ]]; then
-	GLIDE=$GOPATH/src/github.com/tendermint/tendermint/glide.lock
+	GLIDE=$GOPATH/src/github.com/ya-enot/tendermint/glide.lock
 fi
 
 # get vendored commit for given lib

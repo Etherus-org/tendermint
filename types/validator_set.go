@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/merkle"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 // ValidatorSet represent a set of *Validator at a given height.

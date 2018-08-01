@@ -5,16 +5,16 @@ import (
 
 	"github.com/pkg/errors"
 
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpctypes "github.com/tendermint/tendermint/rpc/lib/types"
-	tmtypes "github.com/tendermint/tendermint/types"
-	tmquery "github.com/tendermint/tmlibs/pubsub/query"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	rpctypes "github.com/ya-enot/tendermint/rpc/lib/types"
+	tmtypes "github.com/ya-enot/tendermint/types"
+	tmquery "github.com/ya-enot/tmlibs/pubsub/query"
 )
 
 // Subscribe for events via WebSocket.
 //
 // ```go
-// import "github.com/tendermint/tendermint/types"
+// import "github.com/ya-enot/tendermint/types"
 //
 // client := client.NewHTTP("tcp://0.0.0.0:46657", "/websocket")
 // result, err := client.AddListenerForEvent(types.EventStringNewBlock())
@@ -68,7 +68,7 @@ func Subscribe(wsCtx rpctypes.WSRPCContext, query string) (*ctypes.ResultSubscri
 // Unsubscribe from events via WebSocket.
 //
 // ```go
-// import 'github.com/tendermint/tendermint/types'
+// import 'github.com/ya-enot/tendermint/types'
 //
 // client := client.NewHTTP("tcp://0.0.0.0:46657", "/websocket")
 // result, err := client.RemoveListenerForEvent(types.EventStringNewBlock())

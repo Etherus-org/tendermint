@@ -10,11 +10,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	tmlegacy "github.com/tendermint/go-wire/nowriter/tmlegacy"
-	cmn "github.com/tendermint/tmlibs/common"
-	flow "github.com/tendermint/tmlibs/flowrate"
-	"github.com/tendermint/tmlibs/log"
+	wire "github.com/ya-enot/go-wire"
+	tmlegacy "github.com/ya-enot/go-wire/nowriter/tmlegacy"
+	cmn "github.com/ya-enot/tmlibs/common"
+	flow "github.com/ya-enot/tmlibs/flowrate"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 var legacy = tmlegacy.TMEncoderLegacy{}

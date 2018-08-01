@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tmlibs/log"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 func createTestMConnection(conn net.Conn) *MConnection {

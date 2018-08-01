@@ -6,7 +6,7 @@ for most applications. Tendermint provides unique speed and security
 properties for light client applications.
 
 See our `lite package
-<https://godoc.org/github.com/tendermint/tendermint/lite>`__.
+<https://godoc.org/github.com/ya-enot/tendermint/lite>`__.
 
 Overview
 --------

@@ -3,14 +3,14 @@ package proxy
 import (
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/go-wire/data"
-	"github.com/tendermint/iavl"
+	"github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/iavl"
 
-	"github.com/tendermint/tendermint/lite"
-	"github.com/tendermint/tendermint/lite/client"
-	certerr "github.com/tendermint/tendermint/lite/errors"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/lite"
+	"github.com/ya-enot/tendermint/lite/client"
+	certerr "github.com/ya-enot/tendermint/lite/errors"
+	rpcclient "github.com/ya-enot/tendermint/rpc/client"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
 )
 
 // GetWithProof will query the key on the given node, and verify it has

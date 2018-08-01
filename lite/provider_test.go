@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/tendermint/lite"
-	liteErr "github.com/tendermint/tendermint/lite/errors"
+	"github.com/ya-enot/tendermint/lite"
+	liteErr "github.com/ya-enot/tendermint/lite/errors"
 )
 
 // missingProvider doesn't store anything, always a miss

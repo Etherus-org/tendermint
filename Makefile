@@ -7,7 +7,7 @@ GOTOOLS_CHECK = gox glide ghr gometalinter.v2
 PACKAGES=$(shell go list ./... | grep -v '/vendor/')
 BUILD_TAGS?=tendermint
 TMHOME = $${TMHOME:-$$HOME/.tendermint}
-BUILD_FLAGS = -ldflags "-X github.com/tendermint/tendermint/version.GitCommit=`git rev-parse --short HEAD`"
+BUILD_FLAGS = -ldflags "-X github.com/ya-enot/tendermint/version.GitCommit=`git rev-parse --short HEAD`"
 
 all: check build test install metalinter
 
@@ -56,7 +56,7 @@ get_vendor_deps:
 draw_deps:
 	@# requires brew install graphviz or apt-get install graphviz
 	go get github.com/RobotsAndPencils/goviz
-	@goviz -i github.com/tendermint/tendermint/cmd/tendermint -d 3 | dot -Tpng -o dependency-graph.png
+	@goviz -i github.com/ya-enot/tendermint/cmd/tendermint -d 3 | dot -Tpng -o dependency-graph.png
 
 
 ########################################

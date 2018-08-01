@@ -14,7 +14,7 @@ if [[ "$SEEDS" != "" ]]; then
 fi
 set -u
 
-cd "$GOPATH/src/github.com/tendermint/tendermint"
+cd "$GOPATH/src/github.com/ya-enot/tendermint"
 
 # create docker network
 docker network create --driver bridge --subnet 172.57.0.0/16 "$NETWORK_NAME"

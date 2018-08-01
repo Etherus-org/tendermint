@@ -11,14 +11,14 @@ import (
 
 	fail "github.com/ebuchman/fail-test"
 
-	wire "github.com/tendermint/go-wire"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	wire "github.com/ya-enot/go-wire"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	cstypes "github.com/ya-enot/tendermint/consensus/types"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

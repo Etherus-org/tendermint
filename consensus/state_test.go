@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
-	tmpubsub "github.com/tendermint/tmlibs/pubsub"
+	cstypes "github.com/ya-enot/tendermint/consensus/types"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
+	tmpubsub "github.com/ya-enot/tmlibs/pubsub"
 )
 
 func init() {

@@ -8,12 +8,12 @@ package client
 import (
 	"bytes"
 
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
+	rpcclient "github.com/ya-enot/tendermint/rpc/client"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
 
-	"github.com/tendermint/tendermint/lite"
-	liteErr "github.com/tendermint/tendermint/lite/errors"
+	"github.com/ya-enot/tendermint/lite"
+	liteErr "github.com/ya-enot/tendermint/lite/errors"
 )
 
 // SignStatusClient combines a SignClient and StatusClient.

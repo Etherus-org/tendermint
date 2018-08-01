@@ -14,8 +14,8 @@ import (
 	"github.com/pkg/errors"
 	metrics "github.com/rcrowley/go-metrics"
 
-	types "github.com/tendermint/tendermint/rpc/lib/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	types "github.com/ya-enot/tendermint/rpc/lib/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 const (

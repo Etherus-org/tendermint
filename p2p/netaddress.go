@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	cmn "github.com/tendermint/tmlibs/common"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 // NetAddress defines information about a peer on the network

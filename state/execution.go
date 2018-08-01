@@ -5,12 +5,12 @@ import (
 	"fmt"
 
 	fail "github.com/ebuchman/fail-test"
-	abci "github.com/tendermint/abci/types"
-	crypto "github.com/tendermint/go-crypto"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
-	dbm "github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/log"
+	abci "github.com/ya-enot/abci/types"
+	crypto "github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/tendermint/proxy"
+	"github.com/ya-enot/tendermint/types"
+	dbm "github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 //-----------------------------------------------------------------------------

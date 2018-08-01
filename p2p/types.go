@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	crypto "github.com/tendermint/go-crypto"
+	crypto "github.com/ya-enot/go-crypto"
 )
 
 const maxNodeInfoSize = 10240 // 10Kb

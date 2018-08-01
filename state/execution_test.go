@@ -7,13 +7,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/abci/example/dummy"
-	abci "github.com/tendermint/abci/types"
-	crypto "github.com/tendermint/go-crypto"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
-	dbm "github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/abci/example/dummy"
+	abci "github.com/ya-enot/abci/types"
+	crypto "github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/tendermint/proxy"
+	"github.com/ya-enot/tendermint/types"
+	dbm "github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 var (

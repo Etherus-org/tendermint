@@ -3,8 +3,8 @@ package consensus
 import (
 	"time"
 
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 var (

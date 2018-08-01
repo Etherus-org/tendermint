@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tendermint/go-wire/data"
+	"github.com/ya-enot/go-wire/data"
 )
 
 func TestParseJSONMap(t *testing.T) {

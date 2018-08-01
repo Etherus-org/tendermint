@@ -7,10 +7,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/tendermint/abci/types"
-	data "github.com/tendermint/go-wire/data"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/ya-enot/abci/types"
+	data "github.com/ya-enot/go-wire/data"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
 )
 
 //-----------------------------------------------------------------------------

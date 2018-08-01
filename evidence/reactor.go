@@ -6,11 +6,11 @@ import (
 	"reflect"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tmlibs/log"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tmlibs/log"
 
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/types"
 )
 
 const (

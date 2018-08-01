@@ -1,12 +1,12 @@
 package mock
 
 import (
-	abci "github.com/tendermint/abci/types"
-	data "github.com/tendermint/go-wire/data"
-	"github.com/tendermint/tendermint/rpc/client"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	abci "github.com/ya-enot/abci/types"
+	data "github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/tendermint/rpc/client"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
+	"github.com/ya-enot/tendermint/version"
 )
 
 // ABCIApp will send all abci related request to the named app,

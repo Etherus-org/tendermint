@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 func TestListener(t *testing.T) {

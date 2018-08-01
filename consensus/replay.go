@@ -10,16 +10,16 @@ import (
 	//"strings"
 	"time"
 
-	abci "github.com/tendermint/abci/types"
-	//auto "github.com/tendermint/tmlibs/autofile"
-	cmn "github.com/tendermint/tmlibs/common"
-	dbm "github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/log"
+	abci "github.com/ya-enot/abci/types"
+	//auto "github.com/ya-enot/tmlibs/autofile"
+	cmn "github.com/ya-enot/tmlibs/common"
+	dbm "github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/log"
 
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tendermint/version"
+	"github.com/ya-enot/tendermint/proxy"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
+	"github.com/ya-enot/tendermint/version"
 )
 
 var crc32c = crc32.MakeTable(crc32.Castagnoli)

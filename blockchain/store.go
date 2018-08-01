@@ -7,10 +7,10 @@ import (
 	"io"
 	"sync"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	dbm "github.com/tendermint/tmlibs/db"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	dbm "github.com/ya-enot/tmlibs/db"
 )
 
 /*

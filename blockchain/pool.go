@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	flow "github.com/tendermint/tmlibs/flowrate"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	flow "github.com/ya-enot/tmlibs/flowrate"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 /*

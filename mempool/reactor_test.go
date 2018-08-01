@@ -10,13 +10,13 @@ import (
 
 	"github.com/go-kit/kit/log/term"
 
-	"github.com/tendermint/abci/example/dummy"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/abci/example/dummy"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/proxy"
+	"github.com/ya-enot/tendermint/types"
 )
 
 // mempoolLogger is a TestingLogger which uses a different

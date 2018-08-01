@@ -4,12 +4,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire"
+	"github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire"
 
-	proto "github.com/tendermint/tendermint/benchmarks/proto"
-	"github.com/tendermint/tendermint/p2p"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	proto "github.com/ya-enot/tendermint/benchmarks/proto"
+	"github.com/ya-enot/tendermint/p2p"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
 )
 
 func BenchmarkEncodeStatusWire(b *testing.B) {

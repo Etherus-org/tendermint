@@ -10,8 +10,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tmlibs/cli"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tmlibs/cli"
 )
 
 var (

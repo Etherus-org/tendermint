@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/types"
 
-	"github.com/tendermint/tendermint/lite"
-	liteErr "github.com/tendermint/tendermint/lite/errors"
+	"github.com/ya-enot/tendermint/lite"
+	liteErr "github.com/ya-enot/tendermint/lite/errors"
 )
 
 func TestStaticCert(t *testing.T) {

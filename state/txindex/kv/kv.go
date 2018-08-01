@@ -10,13 +10,13 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/tendermint/abci/types"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/state/txindex"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	db "github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/pubsub/query"
+	abci "github.com/ya-enot/abci/types"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/state/txindex"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	db "github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/pubsub/query"
 )
 
 const (

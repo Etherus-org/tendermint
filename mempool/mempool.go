@@ -10,15 +10,15 @@ import (
 
 	"github.com/pkg/errors"
 
-	abci "github.com/tendermint/abci/types"
-	auto "github.com/tendermint/tmlibs/autofile"
-	"github.com/tendermint/tmlibs/clist"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	abci "github.com/ya-enot/abci/types"
+	auto "github.com/ya-enot/tmlibs/autofile"
+	"github.com/ya-enot/tmlibs/clist"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/proxy"
+	"github.com/ya-enot/tendermint/types"
 )
 
 /*

@@ -8,11 +8,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/tendermint/abci/example/code"
-	abci "github.com/tendermint/abci/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	"github.com/ya-enot/abci/example/code"
+	abci "github.com/ya-enot/abci/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/types"
 )
 
 func init() {

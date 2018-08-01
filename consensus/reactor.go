@@ -10,14 +10,14 @@ import (
 
 	"github.com/pkg/errors"
 
-	wire "github.com/tendermint/go-wire"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	wire "github.com/ya-enot/go-wire"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	"github.com/tendermint/tendermint/p2p"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	cstypes "github.com/ya-enot/tendermint/consensus/types"
+	"github.com/ya-enot/tendermint/p2p"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
 )
 
 const (

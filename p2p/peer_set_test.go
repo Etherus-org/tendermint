@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	cmn "github.com/tendermint/tmlibs/common"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 // Returns an empty dummy peer

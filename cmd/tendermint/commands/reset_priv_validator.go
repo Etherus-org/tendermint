@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tendermint/types"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 // ResetAllCmd removes the database of this Tendermint core

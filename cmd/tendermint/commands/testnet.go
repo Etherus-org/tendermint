@@ -7,8 +7,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 //flags

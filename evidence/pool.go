@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"sync"
 
-	dbm "github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/log"
+	dbm "github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/log"
 
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
 )
 
 // EvidencePool maintains a pool of valid evidence

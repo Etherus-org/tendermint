@@ -4,8 +4,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 type RoundVoteSet struct {

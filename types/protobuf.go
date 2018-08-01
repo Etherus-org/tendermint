@@ -1,7 +1,7 @@
 package types
 
 import (
-	"github.com/tendermint/abci/types"
+	"github.com/ya-enot/abci/types"
 )
 
 // TM2PB is used for converting Tendermint types to protobuf types.

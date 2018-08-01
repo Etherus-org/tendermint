@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/tendermint/tendermint/p2p/upnp"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tendermint/p2p/upnp"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 type Listener interface {

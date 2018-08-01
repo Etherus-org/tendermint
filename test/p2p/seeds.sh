@@ -3,7 +3,7 @@ set -eu
 
 N=$1
 
-cd "$GOPATH/src/github.com/tendermint/tendermint"
+cd "$GOPATH/src/github.com/ya-enot/tendermint"
 
 seeds="$(test/p2p/ip.sh 1):46656"
 for i in $(seq 2 $N); do

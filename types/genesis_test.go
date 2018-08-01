@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	crypto "github.com/tendermint/go-crypto"
+	crypto "github.com/ya-enot/go-crypto"
 )
 
 func TestGenesis(t *testing.T) {

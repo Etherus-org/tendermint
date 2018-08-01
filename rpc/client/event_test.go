@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/abci/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	abci "github.com/ya-enot/abci/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 
-	"github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/rpc/client"
+	"github.com/ya-enot/tendermint/types"
 )
 
 var waitForEventTimeout = 5 * time.Second

@@ -3,9 +3,9 @@ package core
 import (
 	"time"
 
-	data "github.com/tendermint/go-wire/data"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
+	data "github.com/ya-enot/go-wire/data"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
 )
 
 // Get Tendermint status including node info, pubkey, latest block

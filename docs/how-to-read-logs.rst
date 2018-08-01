@@ -121,7 +121,7 @@ overview what they do.
   Tendermint acts as an ABCI client with respect to the application and
   maintains 3 connections: mempool, consensus and query. The code used by
   Tendermint Core can be found `here
-  <https://github.com/tendermint/abci/tree/master/client>`__.
+  <https://github.com/ya-enot/abci/tree/master/client>`__.
 
 - ``blockchain``
   Provides storage, pool (a group of peers), and reactor for both storing and
@@ -136,7 +136,7 @@ overview what they do.
 - ``events``
   Simple event notification system. The list of events can be found
   `here
-  <https://github.com/tendermint/tendermint/blob/master/types/events.go>`__.
+  <https://github.com/ya-enot/tendermint/blob/master/types/events.go>`__.
   You can subscribe to them by calling ``subscribe`` RPC method.
   Refer to `RPC docs
   <specification/rpc.html>`__
@@ -149,13 +149,13 @@ overview what they do.
 - ``p2p``
   Provides an abstraction around peer-to-peer communication. For more details,
   please check out the `README
-  <https://github.com/tendermint/tendermint/blob/56c60fba2381e4ac41d2ae38a1eb6569acfbc095/p2p/README.md>`__.
+  <https://github.com/ya-enot/tendermint/blob/56c60fba2381e4ac41d2ae38a1eb6569acfbc095/p2p/README.md>`__.
 
 - ``rpc``
   `Tendermint's RPC <specification/rpc.html>`__.
 
 - ``rpc-server``
-  RPC server. For implementation details, please read the `README <https://github.com/tendermint/tendermint/blob/master/rpc/lib/README.md>`__.
+  RPC server. For implementation details, please read the `README <https://github.com/ya-enot/tendermint/blob/master/rpc/lib/README.md>`__.
 
 - ``state``
   Represents the latest state and execution submodule, which executes

@@ -33,17 +33,17 @@ Vagrant.configure("2") do |config|
 export PATH=$PATH:/usr/lib/go-1.9/bin:/home/ubuntu/go/bin
 export GOPATH=/home/ubuntu/go
 export LC_ALL=en_US.UTF-8
-cd go/src/github.com/tendermint/tendermint
+cd go/src/github.com/ya-enot/tendermint
 EOF
 
     mkdir -p /home/ubuntu/go/bin
     mkdir -p /home/ubuntu/go/src/github.com/tendermint
-    ln -s /vagrant /home/ubuntu/go/src/github.com/tendermint/tendermint
+    ln -s /vagrant /home/ubuntu/go/src/github.com/ya-enot/tendermint
 
     chown -R ubuntu:ubuntu /home/ubuntu/go
     chown ubuntu:ubuntu /home/ubuntu/.bash_profile
 
     # get all deps and tools, ready to install/test
-    su - ubuntu -c 'cd /home/ubuntu/go/src/github.com/tendermint/tendermint && make get_vendor_deps && make tools'
+    su - ubuntu -c 'cd /home/ubuntu/go/src/github.com/ya-enot/tendermint && make get_vendor_deps && make tools'
   SHELL
 end

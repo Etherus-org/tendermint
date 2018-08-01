@@ -7,8 +7,8 @@ import (
 	"reflect"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	cmn "github.com/tendermint/tmlibs/common"
+	wire "github.com/ya-enot/go-wire"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 const (

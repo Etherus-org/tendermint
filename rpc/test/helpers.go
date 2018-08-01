@@ -7,18 +7,18 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tmlibs/log"
 
-	abci "github.com/tendermint/abci/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	abci "github.com/ya-enot/abci/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 
-	cfg "github.com/tendermint/tendermint/config"
-	nm "github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/proxy"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	core_grpc "github.com/tendermint/tendermint/rpc/grpc"
-	rpcclient "github.com/tendermint/tendermint/rpc/lib/client"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	nm "github.com/ya-enot/tendermint/node"
+	"github.com/ya-enot/tendermint/proxy"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	core_grpc "github.com/ya-enot/tendermint/rpc/grpc"
+	rpcclient "github.com/ya-enot/tendermint/rpc/lib/client"
+	"github.com/ya-enot/tendermint/types"
 )
 
 var globalConfig *cfg.Config

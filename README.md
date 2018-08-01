@@ -4,20 +4,20 @@
 [State Machine Replication](https://en.wikipedia.org/wiki/State_machine_replication).
 Or [Blockchain](https://en.wikipedia.org/wiki/Blockchain_(database)) for short.
 
-[![version](https://img.shields.io/github/tag/tendermint/tendermint.svg)](https://github.com/tendermint/tendermint/releases/latest)
+[![version](https://img.shields.io/github/tag/ya-enot/tendermint.svg)](https://github.com/ya-enot/tendermint/releases/latest)
 [![API Reference](
 https://camo.githubusercontent.com/915b7be44ada53c290eb157634330494ebe3e30a/68747470733a2f2f676f646f632e6f72672f6769746875622e636f6d2f676f6c616e672f6764646f3f7374617475732e737667
-)](https://godoc.org/github.com/tendermint/tendermint)
+)](https://godoc.org/github.com/ya-enot/tendermint)
 [![Go version](https://img.shields.io/badge/go-1.9.2-blue.svg)](https://github.com/moovweb/gvm)
 [![Rocket.Chat](https://demo.rocket.chat/images/join-chat.svg)](https://cosmos.rocket.chat/)
-[![license](https://img.shields.io/github/license/tendermint/tendermint.svg)](https://github.com/tendermint/tendermint/blob/master/LICENSE)
-[![](https://tokei.rs/b1/github/tendermint/tendermint?category=lines)](https://github.com/tendermint/tendermint)
+[![license](https://img.shields.io/github/license/ya-enot/tendermint.svg)](https://github.com/ya-enot/tendermint/blob/master/LICENSE)
+[![](https://tokei.rs/b1/github/ya-enot/tendermint?category=lines)](https://github.com/ya-enot/tendermint)
 
 
 Branch    | Tests | Coverage
 ----------|-------|----------
-master    | [![CircleCI](https://circleci.com/gh/tendermint/tendermint/tree/master.svg?style=shield)](https://circleci.com/gh/tendermint/tendermint/tree/master) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/master/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint)
-develop   | [![CircleCI](https://circleci.com/gh/tendermint/tendermint/tree/develop.svg?style=shield)](https://circleci.com/gh/tendermint/tendermint/tree/develop) | [![codecov](https://codecov.io/gh/tendermint/tendermint/branch/develop/graph/badge.svg)](https://codecov.io/gh/tendermint/tendermint)
+master    | [![CircleCI](https://circleci.com/gh/ya-enot/tendermint/tree/master.svg?style=shield)](https://circleci.com/gh/ya-enot/tendermint/tree/master) | [![codecov](https://codecov.io/gh/ya-enot/tendermint/branch/master/graph/badge.svg)](https://codecov.io/gh/ya-enot/tendermint)
+develop   | [![CircleCI](https://circleci.com/gh/ya-enot/tendermint/tree/develop.svg?style=shield)](https://circleci.com/gh/ya-enot/tendermint/tree/develop) | [![codecov](https://codecov.io/gh/ya-enot/tendermint/branch/develop/graph/badge.svg)](https://codecov.io/gh/ya-enot/tendermint)
 
 _NOTE: This is alpha software. Please contact us if you intend to run it in production._
 
@@ -38,7 +38,7 @@ To download pre-built binaries, see our [downloads page](https://tendermint.com/
 
 To install from source, you should be able to:
 
-`go get -u github.com/tendermint/tendermint/cmd/tendermint`
+`go get -u github.com/ya-enot/tendermint/cmd/tendermint`
 
 For more details (or if it fails), [read the docs](https://tendermint.readthedocs.io/en/master/install.html).
 
@@ -50,19 +50,19 @@ All resources involving the use of, building application on, or developing for, 
 
 ### Sub-projects
 
-* [ABCI](http://github.com/tendermint/abci), the Application Blockchain Interface
-* [Go-Wire](http://github.com/tendermint/go-wire), a deterministic serialization library
-* [Go-Crypto](http://github.com/tendermint/go-crypto), an elliptic curve cryptography library
-* [TmLibs](http://github.com/tendermint/tmlibs), an assortment of Go libraries used internally
-* [IAVL](http://github.com/tendermint/iavl), Merkleized IAVL+ Tree implementation
+* [ABCI](http://github.com/ya-enot/abci), the Application Blockchain Interface
+* [Go-Wire](http://github.com/ya-enot/go-wire), a deterministic serialization library
+* [Go-Crypto](http://github.com/ya-enot/go-crypto), an elliptic curve cryptography library
+* [TmLibs](http://github.com/ya-enot/tmlibs), an assortment of Go libraries used internally
+* [IAVL](http://github.com/ya-enot/iavl), Merkleized IAVL+ Tree implementation
 
 ### Tools
 * [Deployment, Benchmarking, and Monitoring](http://tendermint.readthedocs.io/projects/tools/en/develop/index.html#tendermint-tools)
 
 ### Applications
 
-* [Ethermint](http://github.com/tendermint/ethermint); Ethereum on Tendermint
-* [Cosmos SDK](http://github.com/cosmos/cosmos-sdk); a cryptocurrency application framework
+* [Ethermint](http://github.com/ya-enot/ethermint); Ethereum on Tendermint
+* [Cosmos SDK](http://github.com/ya-enot/cosmos-sdk); a cryptocurrency application framework
 * [Many more](https://tendermint.readthedocs.io/en/master/ecosystem.html#abci-applications)
 
 ### More
@@ -105,7 +105,7 @@ have to start a new blockchain, or write something custom to get the old
 data into the new chain.
 
 However, any bump in the PATCH version should be compatible with existing histories
-(if not please open an [issue](https://github.com/tendermint/tendermint/issues)).
+(if not please open an [issue](https://github.com/ya-enot/tendermint/issues)).
 
 ## Code of Conduct
 

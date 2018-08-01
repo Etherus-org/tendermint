@@ -8,5 +8,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # switch that off at the highest level.
 ENV CGO_ENABLED 0
 
-RUN mkdir -p $GOPATH/src/github.com/tendermint/tendermint
-WORKDIR $GOPATH/src/github.com/tendermint/tendermint
+RUN mkdir -p $GOPATH/src/github.com/ya-enot/tendermint
+WORKDIR $GOPATH/src/github.com/ya-enot/tendermint

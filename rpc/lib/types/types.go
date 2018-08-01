@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/pkg/errors"
-	tmpubsub "github.com/tendermint/tmlibs/pubsub"
+	tmpubsub "github.com/ya-enot/tmlibs/pubsub"
 )
 
 //----------------------------------------
@@ -140,7 +140,7 @@ type WSRPCConnection interface {
 	GetEventSubscriber() EventSubscriber
 }
 
-// EventSubscriber mirros tendermint/tendermint/types.EventBusSubscriber
+// EventSubscriber mirros ya-enot/tendermint/types.EventBusSubscriber
 type EventSubscriber interface {
 	Subscribe(ctx context.Context, subscriber string, query tmpubsub.Query, out chan<- interface{}) error
 	Unsubscribe(ctx context.Context, subscriber string, query tmpubsub.Query) error

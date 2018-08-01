@@ -5,9 +5,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/tendermint/tendermint/lite"
-	certerr "github.com/tendermint/tendermint/lite/errors"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/lite"
+	certerr "github.com/ya-enot/tendermint/lite/errors"
+	"github.com/ya-enot/tendermint/types"
 )
 
 func ValidateBlockMeta(meta *types.BlockMeta, check lite.Commit) error {

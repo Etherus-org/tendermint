@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	crypto "github.com/tendermint/go-crypto"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 func TestValidateBlock(t *testing.T) {

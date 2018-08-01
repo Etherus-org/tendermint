@@ -6,8 +6,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire"
+	"github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire"
 )
 
 var (

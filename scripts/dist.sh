@@ -25,8 +25,8 @@ rm -rf build/pkg
 mkdir -p build/pkg
 
 # Do a hermetic build inside a Docker container.
-docker build -t tendermint/tendermint-builder scripts/tendermint-builder/
-docker run --rm -e "BUILD_TAGS=$BUILD_TAGS" -v "$(pwd)":/go/src/github.com/tendermint/tendermint tendermint/tendermint-builder ./scripts/dist_build.sh
+docker build -t ya-enot/tendermint-builder scripts/tendermint-builder/
+docker run --rm -e "BUILD_TAGS=$BUILD_TAGS" -v "$(pwd)":/go/src/github.com/ya-enot/tendermint ya-enot/tendermint-builder ./scripts/dist_build.sh
 
 # Add "tendermint" and $VERSION prefix to package name.
 rm -rf ./build/dist

@@ -7,12 +7,12 @@ import (
 
 	"github.com/pkg/errors"
 
-	data "github.com/tendermint/go-wire/data"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	rpcclient "github.com/tendermint/tendermint/rpc/lib/client"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	tmpubsub "github.com/tendermint/tmlibs/pubsub"
+	data "github.com/ya-enot/go-wire/data"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	rpcclient "github.com/ya-enot/tendermint/rpc/lib/client"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	tmpubsub "github.com/ya-enot/tmlibs/pubsub"
 )
 
 /*

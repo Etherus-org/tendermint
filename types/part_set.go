@@ -9,10 +9,10 @@ import (
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/tendermint/go-wire"
-	"github.com/tendermint/go-wire/data"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/merkle"
+	"github.com/ya-enot/go-wire"
+	"github.com/ya-enot/go-wire/data"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
-	"github.com/tendermint/go-crypto"
-	cmn "github.com/tendermint/tmlibs/common"
+	"github.com/ya-enot/go-crypto"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 type dummyConn struct {

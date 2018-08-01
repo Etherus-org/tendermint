@@ -11,16 +11,16 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/tendermint/abci/example/dummy"
-	bc "github.com/tendermint/tendermint/blockchain"
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	auto "github.com/tendermint/tmlibs/autofile"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/db"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/abci/example/dummy"
+	bc "github.com/ya-enot/tendermint/blockchain"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/proxy"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
+	auto "github.com/ya-enot/tmlibs/autofile"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/db"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 // WALWithNBlocks generates a consensus WAL. It does this by spining up a

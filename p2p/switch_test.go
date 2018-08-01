@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	crypto "github.com/tendermint/go-crypto"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tmlibs/log"
+	crypto "github.com/ya-enot/go-crypto"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
+	cfg "github.com/ya-enot/tendermint/config"
 )
 
 var (

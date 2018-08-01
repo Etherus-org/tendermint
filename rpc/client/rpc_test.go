@@ -8,12 +8,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/abci/types"
-	"github.com/tendermint/iavl"
+	abci "github.com/ya-enot/abci/types"
+	"github.com/ya-enot/iavl"
 
-	"github.com/tendermint/tendermint/rpc/client"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/rpc/client"
+	rpctest "github.com/ya-enot/tendermint/rpc/test"
+	"github.com/ya-enot/tendermint/types"
 )
 
 func getHTTPClient() *client.HTTP {

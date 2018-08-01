@@ -3,12 +3,12 @@ package client
 import (
 	"context"
 
-	data "github.com/tendermint/go-wire/data"
-	nm "github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/rpc/core"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
-	tmpubsub "github.com/tendermint/tmlibs/pubsub"
+	data "github.com/ya-enot/go-wire/data"
+	nm "github.com/ya-enot/tendermint/node"
+	"github.com/ya-enot/tendermint/rpc/core"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
+	tmpubsub "github.com/ya-enot/tmlibs/pubsub"
 )
 
 /*

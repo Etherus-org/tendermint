@@ -7,9 +7,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	crypto "github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire/data"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire/data"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 //------------------------------------------------------------

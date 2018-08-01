@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tendermint/tendermint/lite"
+	"github.com/ya-enot/tendermint/lite"
 )
 
 func BenchmarkGenCommit20(b *testing.B) {

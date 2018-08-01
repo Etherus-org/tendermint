@@ -8,15 +8,15 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	abci "github.com/tendermint/abci/types"
+	abci "github.com/ya-enot/abci/types"
 
-	crypto "github.com/tendermint/go-crypto"
+	crypto "github.com/ya-enot/go-crypto"
 
-	cmn "github.com/tendermint/tmlibs/common"
-	dbm "github.com/tendermint/tmlibs/db"
+	cmn "github.com/ya-enot/tmlibs/common"
+	dbm "github.com/ya-enot/tmlibs/db"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/types"
 )
 
 // setupTestCase does setup common to all test cases

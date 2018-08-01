@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tendermint/tendermint/types"
-	dbm "github.com/tendermint/tmlibs/db"
+	"github.com/ya-enot/tendermint/types"
+	dbm "github.com/ya-enot/tmlibs/db"
 )
 
 //-----------------------------------------------------

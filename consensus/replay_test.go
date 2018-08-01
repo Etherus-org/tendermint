@@ -15,19 +15,19 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/abci/example/dummy"
-	abci "github.com/tendermint/abci/types"
-	crypto "github.com/tendermint/go-crypto"
-	wire "github.com/tendermint/go-wire"
-	auto "github.com/tendermint/tmlibs/autofile"
-	cmn "github.com/tendermint/tmlibs/common"
-	dbm "github.com/tendermint/tmlibs/db"
+	"github.com/ya-enot/abci/example/dummy"
+	abci "github.com/ya-enot/abci/types"
+	crypto "github.com/ya-enot/go-crypto"
+	wire "github.com/ya-enot/go-wire"
+	auto "github.com/ya-enot/tmlibs/autofile"
+	cmn "github.com/ya-enot/tmlibs/common"
+	dbm "github.com/ya-enot/tmlibs/db"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/proxy"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	"github.com/tendermint/tmlibs/log"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/proxy"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 var consensusReplayConfig *cfg.Config

@@ -14,7 +14,7 @@ Next, install the ``abci-cli`` tool and example applications:
 
 ::
 
-    go get -u github.com/tendermint/abci/cmd/abci-cli
+    go get -u github.com/ya-enot/abci/cmd/abci-cli
 
 If this fails, you may need to use ``glide`` to get vendored
 dependencies:
@@ -22,7 +22,7 @@ dependencies:
 ::
 
     go get github.com/Masterminds/glide
-    cd $GOPATH/src/github.com/tendermint/abci
+    cd $GOPATH/src/github.com/ya-enot/abci
     glide install
     go install ./cmd/abci-cli
 
@@ -105,7 +105,7 @@ response.
 
 The server may be generic for a particular language, and we provide a
 `reference implementation in
-Golang <https://github.com/tendermint/abci/tree/master/server>`__. See
+Golang <https://github.com/ya-enot/abci/tree/master/server>`__. See
 the `list of other ABCI
 implementations <./ecosystem.html>`__ for servers in
 other languages.

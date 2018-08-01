@@ -6,14 +6,14 @@ import (
 	"reflect"
 	"time"
 
-	abci "github.com/tendermint/abci/types"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tmlibs/clist"
-	"github.com/tendermint/tmlibs/log"
+	abci "github.com/ya-enot/abci/types"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tmlibs/clist"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/types"
 )
 
 const (

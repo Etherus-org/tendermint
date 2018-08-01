@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/abci/example/dummy"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/abci/example/dummy"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/types"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

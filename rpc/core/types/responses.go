@@ -4,13 +4,13 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/tendermint/abci/types"
-	crypto "github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire/data"
-	cstypes "github.com/tendermint/tendermint/consensus/types"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/ya-enot/abci/types"
+	crypto "github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire/data"
+	cstypes "github.com/ya-enot/tendermint/consensus/types"
+	"github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
 )
 
 type ResultBlockchainInfo struct {

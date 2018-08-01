@@ -22,7 +22,7 @@ docker run -d \
 	--ip=$(test/p2p/ip.sh "$ID") \
 	--name "local_testnet_$ID" \
 	--entrypoint tendermint \
-	-e TMHOME="/go/src/github.com/tendermint/tendermint/test/p2p/data/mach$ID/core" \
+	-e TMHOME="/go/src/github.com/ya-enot/tendermint/test/p2p/data/mach$ID/core" \
 	--log-driver=syslog \
 	--log-opt syslog-address=udp://127.0.0.1:5514 \
 	--log-opt syslog-facility=daemon \

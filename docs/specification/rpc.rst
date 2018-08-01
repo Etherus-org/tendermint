@@ -10,7 +10,7 @@ Tendermint supports the following RPC protocols:
 -  JSONRPC over websockets
 
 Tendermint RPC is build using `our own RPC
-library <https://github.com/tendermint/tendermint/tree/master/rpc/lib>`__.
+library <https://github.com/ya-enot/tendermint/tree/master/rpc/lib>`__.
 Documentation and tests for that library could be found at
 ``tendermint/rpc/lib`` directory.
 
@@ -55,7 +55,7 @@ Response:
 
 The first entry in the result-array (``96``) is the method this response
 correlates with. ``96`` refers to "ResultTypeBroadcastTx", see
-`responses.go <https://github.com/tendermint/tendermint/blob/master/rpc/core/types/responses.go>`__
+`responses.go <https://github.com/ya-enot/tendermint/blob/master/rpc/core/types/responses.go>`__
 for a complete overview.
 
 JSONRPC/HTTP

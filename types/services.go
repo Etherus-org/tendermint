@@ -1,7 +1,7 @@
 package types
 
 import (
-	abci "github.com/tendermint/abci/types"
+	abci "github.com/ya-enot/abci/types"
 )
 
 // NOTE/XXX: all type definitions in this file are considered UNSTABLE

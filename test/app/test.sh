@@ -95,7 +95,7 @@ function counter_over_grpc_grpc() {
     kill -9 $pid_counter $pid_tendermint
 }
 
-cd $GOPATH/src/github.com/tendermint/tendermint/test/app
+cd $GOPATH/src/github.com/ya-enot/tendermint/test/app
 
 case "$1" in 
     "dummy_over_socket")

@@ -81,7 +81,7 @@ this is what made Tendermint a Proof-of-Stake algorithm.
 Since then, Tendermint has evolved to be a general purpose blockchain consensus engine that can host arbitrary application states.
 That means it can be used as a plug-and-play replacement for the consensus engines of other blockchain software.
 So one can take the current Ethereum code base, whether in Rust, or Go, or Haskell, and run it as a ABCI application
-using Tendermint consensus. Indeed, `we did that with Ethereum <https://github.com/tendermint/ethermint>`__.
+using Tendermint consensus. Indeed, `we did that with Ethereum <https://github.com/ya-enot/ethermint>`__.
 And we plan to do the same for Bitcoin, ZCash, and various other deterministic applications as well.
 
 Another example of a cryptocurrency application built on Tendermint is `the Cosmos network <http://cosmos.network>`__.
@@ -104,7 +104,7 @@ It uses Tendermint as its consensus engine, and provides a particular applicatio
 ABCI Overview
 -------------
 
-The `Application BlockChain Interface (ABCI) <https://github.com/tendermint/abci>`__ allows for Byzantine Fault Tolerant replication of applications written in any programming language.
+The `Application BlockChain Interface (ABCI) <https://github.com/ya-enot/abci>`__ allows for Byzantine Fault Tolerant replication of applications written in any programming language.
 
 Motivation
 ~~~~~~~~~~
@@ -125,8 +125,8 @@ Thus we have an interface, the Application BlockChain Interface (ABCI), and its 
 Intro to ABCI
 ~~~~~~~~~~~~~
 
-`Tendermint Core <https://github.com/tendermint/tendermint>`__ (the "consensus engine") communicates with the application via a socket protocol that 
-satisfies the `ABCI <https://github.com/tendermint/abci>`__.
+`Tendermint Core <https://github.com/ya-enot/tendermint>`__ (the "consensus engine") communicates with the application via a socket protocol that 
+satisfies the `ABCI <https://github.com/ya-enot/abci>`__.
 
 To draw an analogy, lets talk about a well-known cryptocurrency, Bitcoin. Bitcoin is a cryptocurrency blockchain where each node maintains a fully audited Unspent Transaction Output (UTXO) database. If one wanted to create a Bitcoin-like system on top of ABCI, Tendermint Core would be responsible for 
 
@@ -144,7 +144,7 @@ Tendermint is able to decompose the blockchain design by offering a very simple 
 
 The ABCI consists of 3 primary message types that get delivered from the core to the application. The application replies with corresponding response messages.
 
-The messages are specified here: `ABCI Message Types <https://github.com/tendermint/abci#message-types>`__.
+The messages are specified here: `ABCI Message Types <https://github.com/ya-enot/abci#message-types>`__.
 
 The **DeliverTx** message is the work horse of the application. Each transaction in the blockchain is delivered with this message. The application needs to validate each transaction received with the **DeliverTx** message against the current state, application protocol, and the cryptographic credentials of the transaction. A validated transaction then needs to update the application state — by binding a value into a key values store, or by updating the UTXO database, for instance.
 

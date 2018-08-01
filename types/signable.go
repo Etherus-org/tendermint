@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"io"
 
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/merkle"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 // Signable is an interface for all signable things.

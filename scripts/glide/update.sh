@@ -6,7 +6,7 @@ IFS=$'\n\t'
 
 LIB=$1
 
-TMCORE=$GOPATH/src/github.com/tendermint/tendermint
+TMCORE=$GOPATH/src/github.com/ya-enot/tendermint
 set +u
 if [[ "$GLIDE" == "" ]]; then
 	GLIDE=$TMCORE/glide.lock

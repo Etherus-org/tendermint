@@ -1,4 +1,4 @@
-package: github.com/tendermint/tendermint
+package: github.com/ya-enot/tendermint
 import:
 - package: github.com/ebuchman/fail-test
 - package: github.com/gogo/protobuf
@@ -17,24 +17,24 @@ import:
   version: v0.0.1
 - package: github.com/spf13/viper
   version: v1.0.0
-- package: github.com/tendermint/abci
-  version: v0.9.0
+- package: github.com/ya-enot/abci
+  version: ya-enot-develop
   subpackages:
   - client
   - example/dummy
   - types
-- package: github.com/tendermint/go-crypto
-  version: ~0.4.1
-- package: github.com/tendermint/go-wire
-  version: ~0.7.2
+- package: github.com/ya-enot/go-crypto
+  version: ya-enot-develop
+- package: github.com/ya-enot/go-wire
+  version: ya-enot-develop
   subpackages:
   - data
-- package: github.com/tendermint/iavl
-  version: ~0.2.0
+- package: github.com/ya-enot/iavl
+  version: ya-enot-develop
   subpackages:
   - iavl
-- package: github.com/tendermint/tmlibs
-  version: v0.6.0
+- package: github.com/ya-enot/tmlibs
+  version: ya-enot-develop
   subpackages:
   - autofile
   - cli

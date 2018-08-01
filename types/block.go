@@ -8,10 +8,10 @@ import (
 	"strings"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/go-wire/data"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/merkle"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/go-wire/data"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 // Block defines the atomic unit of a Tendermint blockchain.

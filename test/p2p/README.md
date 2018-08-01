@@ -4,7 +4,7 @@ These scripts facilitate setting up and testing a local testnet using docker con
 
 Setup your own local testnet as follows.
 
-For consistency, we assume all commands are run from the Tendermint repository root (ie. $GOPATH/src/github.com/tendermint/tendermint).
+For consistency, we assume all commands are run from the Tendermint repository root (ie. $GOPATH/src/github.com/ya-enot/tendermint).
 
 First, build the docker image:
 
@@ -37,7 +37,7 @@ for i in $(seq 1 4); do
 	  --ip="172.57.0.$((100 + $i))" \
 	  --name local_testnet_$i \
 	  --entrypoint tendermint \
-	  -e TMHOME=/go/src/github.com/tendermint/tendermint/test/p2p/data/mach$i/core \
+	  -e TMHOME=/go/src/github.com/ya-enot/tendermint/test/p2p/data/mach$i/core \
 	  tendermint_tester node --p2p.seeds 172.57.0.101:46656,172.57.0.102:46656,172.57.0.103:46656,172.57.0.104:46656 --proxy_app=dummy
 done
 ```

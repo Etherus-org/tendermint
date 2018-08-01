@@ -6,9 +6,9 @@ import (
 	"io/ioutil"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
+	wire "github.com/ya-enot/go-wire"
 
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/types"
 )
 
 // database keys

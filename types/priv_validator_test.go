@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	crypto "github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire/data"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire/data"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 func TestGenLoadValidator(t *testing.T) {

@@ -53,7 +53,7 @@ blocks are produced regularly, even if there are no transactions. See *No Empty 
 
 Tendermint supports in-process versions of the dummy, counter, and nil
 apps that ship as examples in the `ABCI
-repository <https://github.com/tendermint/abci>`__. It's easy to compile
+repository <https://github.com/ya-enot/abci>`__. It's easy to compile
 your own app in-process with tendermint if it's written in Go. If your
 app is not written in Go, simply run it in another process, and use the
 ``--proxy_app`` flag to specify the address of the socket it is
@@ -281,7 +281,7 @@ specify peers for a running node to connect to:
 
 Additionally, the peer-exchange protocol can be enabled using the
 ``--pex`` flag, though this feature is `still under
-development <https://github.com/tendermint/tendermint/issues/598>`__. If
+development <https://github.com/ya-enot/tendermint/issues/598>`__. If
 ``--pex`` is enabled, peers will gossip about known peers and form a
 more resilient network.
 

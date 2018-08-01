@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	cmn "github.com/tendermint/tmlibs/common"
-	dbm "github.com/tendermint/tmlibs/db"
+	cmn "github.com/ya-enot/tmlibs/common"
+	dbm "github.com/ya-enot/tmlibs/db"
 )
 
 const defaultStorePeriodicSaveInterval = 1 * time.Minute

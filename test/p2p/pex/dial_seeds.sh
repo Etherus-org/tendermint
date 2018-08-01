@@ -3,7 +3,7 @@ set -u
 
 N=$1
 
-cd $GOPATH/src/github.com/tendermint/tendermint
+cd $GOPATH/src/github.com/ya-enot/tendermint
 
 echo "Waiting for nodes to come online"
 for i in `seq 1 $N`; do

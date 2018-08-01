@@ -27,7 +27,7 @@ There are two ways to become validator.
 1. They can be pre-established in the `genesis
    state <./genesis.html>`__
 2. The `ABCI app responds to the EndBlock
-   message <https://github.com/tendermint/abci>`__ with changes to the
+   message <https://github.com/ya-enot/abci>`__ with changes to the
    existing validator set.
 
 Committing a Block

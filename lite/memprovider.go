@@ -5,7 +5,7 @@ import (
 	"sort"
 	"sync"
 
-	liteErr "github.com/tendermint/tendermint/lite/errors"
+	liteErr "github.com/ya-enot/tendermint/lite/errors"
 )
 
 type memStoreProvider struct {

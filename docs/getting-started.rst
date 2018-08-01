@@ -19,13 +19,13 @@ Install
 The first apps we will work with are written in Go. To install them, you
 need to `install Go <https://golang.org/doc/install>`__ and put
 ``$GOPATH/bin`` in your
-``$PATH``; see `here <https://github.com/tendermint/tendermint/wiki/Setting-GOPATH>`__ for more info.
+``$PATH``; see `here <https://github.com/ya-enot/tendermint/wiki/Setting-GOPATH>`__ for more info.
 
 Then run
 
 ::
 
-    go get -u github.com/tendermint/abci/cmd/abci-cli
+    go get -u github.com/ya-enot/abci/cmd/abci-cli
 
 If there is an error, install and run the ``glide`` tool to pin the
 dependencies:
@@ -33,7 +33,7 @@ dependencies:
 ::
 
     go get github.com/Masterminds/glide
-    cd $GOPATH/src/github.com/tendermint/abci
+    cd $GOPATH/src/github.com/ya-enot/abci
     glide install
     go install ./cmd/abci-cli
 
@@ -148,7 +148,7 @@ The result should look like:
 Note the ``value`` in the result (``61626364``); this is the
 hex-encoding of the ASCII of ``abcd``. You can verify this in
 a python shell by running ``"61626364".decode('hex')``. Stay
-tuned for a future release that `makes this output more human-readable <https://github.com/tendermint/abci/issues/32>`__.
+tuned for a future release that `makes this output more human-readable <https://github.com/ya-enot/abci/issues/32>`__.
 
 Now let's try setting a different key and value:
 
@@ -313,7 +313,7 @@ Neat, eh?
 Basecoin - A More Interesting Example
 -------------------------------------
 
-We saved the best for last; the `Cosmos SDK <https://github.com/cosmos/cosmos-sdk>`__ is a general purpose framework for building cryptocurrencies. Unlike the ``dummy`` and ``counter``, which are strictly for example purposes. The reference implementation of Cosmos SDK is ``basecoin``, which demonstrates how to use the building blocks of the Cosmos SDK.
+We saved the best for last; the `Cosmos SDK <https://github.com/ya-enot/cosmos-sdk>`__ is a general purpose framework for building cryptocurrencies. Unlike the ``dummy`` and ``counter``, which are strictly for example purposes. The reference implementation of Cosmos SDK is ``basecoin``, which demonstrates how to use the building blocks of the Cosmos SDK.
 
 The default ``basecoin`` application is a multi-asset cryptocurrency
 that supports inter-blockchain communication (IBC). For more details on how

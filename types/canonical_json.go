@@ -3,8 +3,8 @@ package types
 import (
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/go-wire/data"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/go-wire/data"
 )
 
 // canonical json is go-wire's json for structs with fields in alphabetical order

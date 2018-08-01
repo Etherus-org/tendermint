@@ -3,10 +3,10 @@ package main
 import (
 	"os"
 
-	"github.com/tendermint/tmlibs/cli"
+	"github.com/ya-enot/tmlibs/cli"
 
-	cmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	nm "github.com/tendermint/tendermint/node"
+	cmd "github.com/ya-enot/tendermint/cmd/tendermint/commands"
+	nm "github.com/ya-enot/tendermint/node"
 )
 
 func main() {

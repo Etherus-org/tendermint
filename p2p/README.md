@@ -1,8 +1,8 @@
-# `tendermint/tendermint/p2p`
+# `ya-enot/tendermint/p2p`
 
-[![CircleCI](https://circleci.com/gh/tendermint/tendermint/p2p.svg?style=svg)](https://circleci.com/gh/tendermint/tendermint/p2p)
+[![CircleCI](https://circleci.com/gh/ya-enot/tendermint/p2p.svg?style=svg)](https://circleci.com/gh/ya-enot/tendermint/p2p)
 
-`tendermint/tendermint/p2p` provides an abstraction around peer-to-peer communication.<br/>
+`ya-enot/tendermint/p2p` provides an abstraction around peer-to-peer communication.<br/>
 
 ## MConnection
 

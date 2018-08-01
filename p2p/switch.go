@@ -9,9 +9,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	crypto "github.com/tendermint/go-crypto"
-	cfg "github.com/tendermint/tendermint/config"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	cfg "github.com/ya-enot/tendermint/config"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 const (

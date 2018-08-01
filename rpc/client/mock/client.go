@@ -16,12 +16,12 @@ package mock
 import (
 	"reflect"
 
-	data "github.com/tendermint/go-wire/data"
-	"github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/rpc/core"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	data "github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/tendermint/rpc/client"
+	"github.com/ya-enot/tendermint/rpc/core"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 // Client wraps arbitrary implementations of the various interfaces.

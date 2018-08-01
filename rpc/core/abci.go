@@ -1,10 +1,10 @@
 package core
 
 import (
-	abci "github.com/tendermint/abci/types"
-	data "github.com/tendermint/go-wire/data"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/version"
+	abci "github.com/ya-enot/abci/types"
+	data "github.com/ya-enot/go-wire/data"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/version"
 )
 
 // Query the application for some information.

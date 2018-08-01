@@ -7,10 +7,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire"
-	"github.com/tendermint/go-wire/data"
-	cmn "github.com/tendermint/tmlibs/common"
+	"github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire"
+	"github.com/ya-enot/go-wire/data"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 var (

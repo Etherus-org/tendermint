@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/tendermint/abci/example/dummy"
+	"github.com/ya-enot/abci/example/dummy"
 
-	nm "github.com/tendermint/tendermint/node"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
+	nm "github.com/ya-enot/tendermint/node"
+	rpctest "github.com/ya-enot/tendermint/rpc/test"
 )
 
 var node *nm.Node

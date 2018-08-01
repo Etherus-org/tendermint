@@ -4,12 +4,12 @@ import (
 	"strings"
 	"testing"
 
-	abcicli "github.com/tendermint/abci/client"
-	"github.com/tendermint/abci/example/dummy"
-	"github.com/tendermint/abci/server"
-	"github.com/tendermint/abci/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	abcicli "github.com/ya-enot/abci/client"
+	"github.com/ya-enot/abci/example/dummy"
+	"github.com/ya-enot/abci/server"
+	"github.com/ya-enot/abci/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 //----------------------------------------

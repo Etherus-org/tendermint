@@ -2,7 +2,7 @@
 
 Thank you for considering making contributions to Tendermint and related repositories! Start by taking a look at the [coding repo](https://github.com/tendermint/coding) for overall information on repository workflow and standards.
 
-Please follow standard github best practices: fork the repo, branch from the tip of develop, make some commits, and submit a pull request to develop. See the [open issues](https://github.com/tendermint/tendermint/issues) for things we need help with!
+Please follow standard github best practices: fork the repo, branch from the tip of develop, make some commits, and submit a pull request to develop. See the [open issues](https://github.com/ya-enot/tendermint/issues) for things we need help with!
 
 Please make sure to use `gofmt` before every commit - the easiest way to do this is have your editor run it for you upon saving a file.
 
@@ -12,12 +12,12 @@ Please note that Go requires code to live under absolute paths, which complicate
 While my fork lives at `https://github.com/ebuchman/tendermint`,
 the code should never exist at  `$GOPATH/src/github.com/ebuchman/tendermint`.
 Instead, we use `git remote` to add the fork as a new remote for the original repo,
-`$GOPATH/src/github.com/tendermint/tendermint `, and do all the work there.
+`$GOPATH/src/github.com/ya-enot/tendermint `, and do all the work there.
 
 For instance, to create a fork and work on a branch of it, I would:
 
   * Create the fork on github, using the fork button.
-  * Go to the original repo checked out locally (ie. `$GOPATH/src/github.com/tendermint/tendermint`)
+  * Go to the original repo checked out locally (ie. `$GOPATH/src/github.com/ya-enot/tendermint`)
   * `git remote rename origin upstream`
   * `git remote add origin git@github.com:ebuchman/basecoin.git`
 
@@ -47,7 +47,7 @@ If you are a [Vagrant](https://www.vagrantup.com/) user, all you have to do to g
 ```
 vagrant up
 vagrant ssh
-cd ~/go/src/github.com/tendermint/tendermint
+cd ~/go/src/github.com/ya-enot/tendermint
 make test
 ```
 
@@ -68,7 +68,7 @@ especially `go-p2p` and `go-rpc`, as their versions are referenced in tendermint
 - the latest state of development is on `develop`
 - `develop` must never fail `make test`
 - no --force onto `develop` (except when reverting a broken commit, which should seldom happen)
-- create a development branch either on github.com/tendermint/tendermint, or your fork (using `git add origin`)
+- create a development branch either on github.com/ya-enot/tendermint, or your fork (using `git add origin`)
 - before submitting a pull request, begin `git rebase` on top of `develop`
 
 ### Pull Merge Procedure:

@@ -13,8 +13,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	types "github.com/tendermint/tendermint/rpc/lib/types"
-	"github.com/tendermint/tmlibs/log"
+	types "github.com/ya-enot/tendermint/rpc/lib/types"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 func StartHTTPServer(listenAddr string, handler http.Handler, logger log.Logger) (listener net.Listener, err error) {

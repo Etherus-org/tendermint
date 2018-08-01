@@ -29,17 +29,17 @@ Public service reporting and tracking, written in Go, and `authored by Zach Bald
 Cosmos SDK
 ^^^^^^^^^^
 
-A prototypical account based crypto currency state machine supporting plugins, written in Go, and `authored by Cosmos <https://github.com/cosmos/cosmos-sdk>`__.
+A prototypical account based crypto currency state machine supporting plugins, written in Go, and `authored by Cosmos <https://github.com/ya-enot/cosmos-sdk>`__.
 
 Ethermint
 ^^^^^^^^^
 
-The go-ethereum state machine run as a ABCI app, written in Go, `authored by Tendermint <https://github.com/tendermint/ethermint>`__.
+The go-ethereum state machine run as a ABCI app, written in Go, `authored by Tendermint <https://github.com/ya-enot/ethermint>`__.
 
 IAVL
 ^^^^
 
-Immutable AVL+ tree with Merkle proofs, Written in Go, `authored by Tendermint <https://github.com/tendermint/iavl>`__.
+Immutable AVL+ tree with Merkle proofs, Written in Go, `authored by Tendermint <https://github.com/ya-enot/iavl>`__.
 
 Lotion
 ^^^^^^
@@ -84,7 +84,7 @@ ABCI Servers
 | **Name**                                                         | **Author**         | **Language** |
 |                                                                  |                    |              |
 +------------------------------------------------------------------+--------------------+--------------+
-| `abci <https://github.com/tendermint/abci>`__                    | Tendermint         | Go           |
+| `abci <https://github.com/ya-enot/abci>`__                    | Tendermint         | Go           |
 +------------------------------------------------------------------+--------------------+--------------+
 | `js abci <https://github.com/tendermint/js-abci>`__              | Tendermint         | Javascript   |
 +------------------------------------------------------------------+--------------------+--------------+

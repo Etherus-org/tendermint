@@ -3,7 +3,7 @@ package core
 import (
 	"fmt"
 
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
 )
 
 // Get network info.

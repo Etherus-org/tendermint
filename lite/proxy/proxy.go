@@ -3,11 +3,11 @@ package proxy
 import (
 	"net/http"
 
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tmlibs/log"
 
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
-	"github.com/tendermint/tendermint/rpc/core"
-	rpc "github.com/tendermint/tendermint/rpc/lib/server"
+	rpcclient "github.com/ya-enot/tendermint/rpc/client"
+	"github.com/ya-enot/tendermint/rpc/core"
+	rpc "github.com/ya-enot/tendermint/rpc/lib/server"
 )
 
 const (

@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	abci "github.com/tendermint/abci/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
-	tmpubsub "github.com/tendermint/tmlibs/pubsub"
+	abci "github.com/ya-enot/abci/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
+	tmpubsub "github.com/ya-enot/tmlibs/pubsub"
 )
 
 const defaultCapacity = 1000

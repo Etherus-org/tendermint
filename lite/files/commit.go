@@ -6,10 +6,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	wire "github.com/tendermint/go-wire"
+	wire "github.com/ya-enot/go-wire"
 
-	"github.com/tendermint/tendermint/lite"
-	liteErr "github.com/tendermint/tendermint/lite/errors"
+	"github.com/ya-enot/tendermint/lite"
+	liteErr "github.com/ya-enot/tendermint/lite/errors"
 )
 
 const (

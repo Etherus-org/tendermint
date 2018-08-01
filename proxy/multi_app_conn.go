@@ -3,7 +3,7 @@ package proxy
 import (
 	"github.com/pkg/errors"
 
-	cmn "github.com/tendermint/tmlibs/common"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 //-----------------------------

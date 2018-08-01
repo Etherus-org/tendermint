@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 func createTempFileName(prefix string) string {

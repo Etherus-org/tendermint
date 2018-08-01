@@ -64,7 +64,7 @@ FEATURES:
     NOTE it is currently insecure and its APIs are not yet covered by semver
 
 IMPROVEMENTS:
-- rpc/client: can act as event bus subscriber (See https://github.com/tendermint/tendermint/issues/945).
+- rpc/client: can act as event bus subscriber (See https://github.com/ya-enot/tendermint/issues/945).
 - p2p: use exponential backoff from seconds to hours when attempting to reconnect to persistent peer
 - config: moniker defaults to the machine's hostname instead of "anonymous"
 
@@ -145,7 +145,7 @@ BUG FIXES:
  - rpc: fix panics on missing params
  - rpc: fix `/dump_consensus_state` to have normal json output (NOTE: technically breaking, but worth a bug fix label)
  - types: fixed out of range error in VoteSet.addVote
- - consensus: fix wal autofile via https://github.com/tendermint/tmlibs/blob/master/CHANGELOG.md#032-october-2-2017
+ - consensus: fix wal autofile via https://github.com/ya-enot/tmlibs/blob/master/CHANGELOG.md#032-october-2-2017
 
 ## 0.11.0 (September 22, 2017)
 
@@ -239,7 +239,7 @@ Also includes the Grand Repo-Merge of 2017.
 BREAKING CHANGES:
 
 - Config and Flags:
-  - The `config` map is replaced with a [`Config` struct](https://github.com/tendermint/tendermint/blob/master/config/config.go#L11),
+  - The `config` map is replaced with a [`Config` struct](https://github.com/ya-enot/tendermint/blob/master/config/config.go#L11),
 containing substructs: `BaseConfig`, `P2PConfig`, `MempoolConfig`, `ConsensusConfig`, `RPCConfig`
   - This affects the following flags:
     - `--seeds` is now `--p2p.seeds`
@@ -262,7 +262,7 @@ containing substructs: `BaseConfig`, `P2PConfig`, `MempoolConfig`, `ConsensusCon
 
 - Logger
   - Replace static `log15` logger with a simple interface, and provide a new implementation using `go-kit`.
-See our new [logging library](https://github.com/tendermint/tmlibs/log) and [blog post](https://tendermint.com/blog/abstracting-the-logger-interface-in-go) for more details
+See our new [logging library](https://github.com/ya-enot/tmlibs/log) and [blog post](https://tendermint.com/blog/abstracting-the-logger-interface-in-go) for more details
   - Levels `warn` and `notice` are removed (you may need to change them in your `config.toml`!)
   - Change some [function and method signatures](https://gist.github.com/ebuchman/640d5fc6c2605f73497992fe107ebe0b) to accept a logger
 
@@ -294,7 +294,7 @@ FEATURES:
 
 IMPROVEMENTS:
 
-- Merge `tendermint/go-p2p -> tendermint/tendermint/p2p` and `tendermint/go-rpc -> tendermint/tendermint/rpc/lib`
+- Merge `tendermint/go-p2p -> ya-enot/tendermint/p2p` and `tendermint/go-rpc -> ya-enot/tendermint/rpc/lib`
 - Update paths for grand repo merge:
   - `go-common -> tmlibs/common`
   - `go-data -> go-wire/data`
@@ -387,7 +387,7 @@ IMPROVEMENTS:
 - Simplified starting Tendermint in-process from another application
 - Better organized Makefile
 - Scripts for auto-building binaries across platforms
-- Docker image improved, slimmed down (using Alpine), and changed from tendermint/tmbase to tendermint/tendermint
+- Docker image improved, slimmed down (using Alpine), and changed from tendermint/tmbase to ya-enot/tendermint
 - New repo files: `CONTRIBUTING.md`, Github `ISSUE_TEMPLATE`, `CHANGELOG.md`
 - Improvements on CircleCI for managing build/test artifacts
 - Handshake replay is doen through the consensus package, possibly using a mockApp

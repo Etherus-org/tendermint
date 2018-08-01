@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	crypto "github.com/tendermint/go-crypto"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 const (

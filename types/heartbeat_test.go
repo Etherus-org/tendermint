@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/go-crypto"
+	"github.com/ya-enot/go-crypto"
 )
 
 func TestHeartbeatCopy(t *testing.T) {

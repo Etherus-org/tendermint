@@ -19,7 +19,7 @@ set -u
 
 cd "$GOPATH/src/github.com/tendermint/network_testing"
 echo "... running network test $(pwd)"
-TMHEAD=$(git rev-parse --abbrev-ref HEAD) TM_IMAGE="tendermint/tendermint" bash experiments/exp_throughput.sh $DATACENTER $VALSETSIZE $BLOCKSIZE $TX_SIZE $NTXS $MACH_PREFIX $RESULTSDIR $CLOUD_PROVIDER
+TMHEAD=$(git rev-parse --abbrev-ref HEAD) TM_IMAGE="ya-enot/tendermint" bash experiments/exp_throughput.sh $DATACENTER $VALSETSIZE $BLOCKSIZE $TX_SIZE $NTXS $MACH_PREFIX $RESULTSDIR $CLOUD_PROVIDER
 
 # TODO: publish result!
 

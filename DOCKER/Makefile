@@ -5,9 +5,9 @@ push:
 	@sh -c "'$(CURDIR)/push.sh'"
 
 build_develop:
-	docker build -t "tendermint/tendermint:develop" -f Dockerfile.develop .
+	docker build -t "ya-enot/tendermint:develop" -f Dockerfile.develop .
 
 push_develop:
-	docker push "tendermint/tendermint:develop"
+	docker push "ya-enot/tendermint:develop"
 
 .PHONY: build build_develop push push_develop

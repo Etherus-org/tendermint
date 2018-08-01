@@ -7,11 +7,11 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	crypto "github.com/tendermint/go-crypto"
-	data "github.com/tendermint/go-wire/data"
-	"github.com/tendermint/tendermint/p2p"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	data "github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/tendermint/p2p"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 func init() {

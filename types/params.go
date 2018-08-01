@@ -3,8 +3,8 @@ package types
 import (
 	"github.com/pkg/errors"
 
-	abci "github.com/tendermint/abci/types"
-	"github.com/tendermint/tmlibs/merkle"
+	abci "github.com/ya-enot/abci/types"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 const (

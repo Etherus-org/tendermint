@@ -7,12 +7,12 @@ import (
 	"sync"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/p2p"
-	sm "github.com/tendermint/tendermint/state"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/p2p"
+	sm "github.com/ya-enot/tendermint/state"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 const (

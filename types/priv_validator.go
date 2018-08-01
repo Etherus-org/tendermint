@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	crypto "github.com/tendermint/go-crypto"
-	data "github.com/tendermint/go-wire/data"
-	cmn "github.com/tendermint/tmlibs/common"
+	crypto "github.com/ya-enot/go-crypto"
+	data "github.com/ya-enot/go-wire/data"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 // TODO: type ?

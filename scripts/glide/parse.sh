@@ -2,7 +2,7 @@
 
 set +u
 if [[ "$GLIDE" == "" ]]; then
-	GLIDE=$GOPATH/src/github.com/tendermint/tendermint/glide.lock
+	GLIDE=$GOPATH/src/github.com/ya-enot/tendermint/glide.lock
 fi
 set -u
 

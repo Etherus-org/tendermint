@@ -5,9 +5,9 @@ import (
 	"errors"
 	"fmt"
 
-	abci "github.com/tendermint/abci/types"
-	"github.com/tendermint/go-wire/data"
-	"github.com/tendermint/tmlibs/merkle"
+	abci "github.com/ya-enot/abci/types"
+	"github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/tmlibs/merkle"
 )
 
 // Tx is an arbitrary byte array.

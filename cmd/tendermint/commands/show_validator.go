@@ -5,8 +5,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/tendermint/go-wire/data"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/go-wire/data"
+	"github.com/ya-enot/tendermint/types"
 )
 
 // ShowValidatorCmd adds capabilities for showing the validator info.

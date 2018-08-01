@@ -20,9 +20,9 @@ import (
 	"golang.org/x/crypto/nacl/secretbox"
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/tendermint/go-crypto"
-	"github.com/tendermint/go-wire"
-	cmn "github.com/tendermint/tmlibs/common"
+	"github.com/ya-enot/go-crypto"
+	"github.com/ya-enot/go-wire"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 // 2 + 1024 == 1026 total frame size

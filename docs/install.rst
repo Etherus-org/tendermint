@@ -24,7 +24,7 @@ You should be able to install the latest with a simple
 
 ::
 
-    go get github.com/tendermint/tendermint/cmd/tendermint
+    go get github.com/ya-enot/tendermint/cmd/tendermint
 
 Run ``tendermint --help`` and ``tendermint version`` to ensure your
 installation worked.
@@ -43,7 +43,7 @@ Now we can fetch the correct versions of each dependency by running:
 
 ::
 
-    cd $GOPATH/src/github.com/tendermint/tendermint
+    cd $GOPATH/src/github.com/ya-enot/tendermint
     glide install
     go install ./cmd/tendermint
 
@@ -59,19 +59,19 @@ If you already have Tendermint installed, and you make updates, simply
 
 ::
 
-    cd $GOPATH/src/github.com/tendermint/tendermint
+    cd $GOPATH/src/github.com/ya-enot/tendermint
     go install ./cmd/tendermint
 
 To upgrade, there are a few options:
 
 -  set a new ``$GOPATH`` and run
-   ``go get github.com/tendermint/tendermint/cmd/tendermint``. This
+   ``go get github.com/ya-enot/tendermint/cmd/tendermint``. This
    makes a fresh copy of everything for the new version.
--  run ``go get -u github.com/tendermint/tendermint/cmd/tendermint``,
+-  run ``go get -u github.com/ya-enot/tendermint/cmd/tendermint``,
    where the ``-u`` fetches the latest updates for the repository and
    its dependencies
 -  fetch and checkout the latest master branch in
-   ``$GOPATH/src/github.com/tendermint/tendermint``, and then run
+   ``$GOPATH/src/github.com/ya-enot/tendermint``, and then run
    ``glide install && go install ./cmd/tendermint`` as above.
 
 Note the first two options should usually work, but may fail. If they
@@ -79,7 +79,7 @@ do, use ``glide``, as above:
 
 ::
 
-    cd $GOPATH/src/github.com/tendermint/tendermint
+    cd $GOPATH/src/github.com/ya-enot/tendermint
     glide install
     go install ./cmd/tendermint
 
@@ -94,8 +94,8 @@ If ``go get`` failing bothers you, fetch the code using ``git``:
 ::
 
     mkdir -p $GOPATH/src/github.com/tendermint
-    git clone https://github.com/tendermint/tendermint $GOPATH/src/github.com/tendermint/tendermint
-    cd $GOPATH/src/github.com/tendermint/tendermint
+    git clone https://github.com/ya-enot/tendermint $GOPATH/src/github.com/ya-enot/tendermint
+    cd $GOPATH/src/github.com/ya-enot/tendermint
     glide install
     go install ./cmd/tendermint
 

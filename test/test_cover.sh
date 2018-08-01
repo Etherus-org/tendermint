@@ -1,6 +1,6 @@
 #! /bin/bash
 
-PKGS=$(go list github.com/tendermint/tendermint/... | grep -v /vendor/)
+PKGS=$(go list github.com/ya-enot/tendermint/... | grep -v /vendor/)
 
 set -e
 echo "mode: atomic" > coverage.txt

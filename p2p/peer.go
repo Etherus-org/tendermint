@@ -7,10 +7,10 @@ import (
 
 	"github.com/pkg/errors"
 
-	crypto "github.com/tendermint/go-crypto"
-	wire "github.com/tendermint/go-wire"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	crypto "github.com/ya-enot/go-crypto"
+	wire "github.com/ya-enot/go-wire"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 // Peer is an interface representing a peer connected on a reactor.

@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/types"
-	dbm "github.com/tendermint/tmlibs/db"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/types"
+	dbm "github.com/ya-enot/tmlibs/db"
 )
 
 //-------------------------------------------

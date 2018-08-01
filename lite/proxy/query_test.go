@@ -8,14 +8,14 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/abci/example/dummy"
+	"github.com/ya-enot/abci/example/dummy"
 
-	"github.com/tendermint/tendermint/lite"
-	certclient "github.com/tendermint/tendermint/lite/client"
-	nm "github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/rpc/client"
-	rpctest "github.com/tendermint/tendermint/rpc/test"
-	"github.com/tendermint/tendermint/types"
+	"github.com/ya-enot/tendermint/lite"
+	certclient "github.com/ya-enot/tendermint/lite/client"
+	nm "github.com/ya-enot/tendermint/node"
+	"github.com/ya-enot/tendermint/rpc/client"
+	rpctest "github.com/ya-enot/tendermint/rpc/test"
+	"github.com/ya-enot/tendermint/types"
 )
 
 var node *nm.Node

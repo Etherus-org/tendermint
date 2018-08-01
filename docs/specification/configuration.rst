@@ -9,7 +9,7 @@ Config parameters
 ~~~~~~~~~~~~~~~~~
 
 The main config parameters are defined
-`here <https://github.com/tendermint/tendermint/blob/master/config/config.go>`__.
+`here <https://github.com/ya-enot/tendermint/blob/master/config/config.go>`__.
 
 -  ``abci``: ABCI transport (socket \| grpc). *Default*: ``socket``
 -  ``db_backend``: Database backend for the blockchain and

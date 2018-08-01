@@ -87,7 +87,7 @@ and check against that every time.
 Once there is a dynamic validator set, the issue of
 verifying a block becomes a bit more tricky. There is
 background information in a
-github issue (https://github.com/tendermint/tendermint/issues/377).
+github issue (https://github.com/ya-enot/tendermint/issues/377).
 
 In short, if there is a block at height H with a known
 (trusted) validator set V, and another block at height H'

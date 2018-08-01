@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	wire "github.com/tendermint/go-wire"
-	"github.com/tendermint/tendermint/consensus/types"
-	tmtypes "github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	wire "github.com/ya-enot/go-wire"
+	"github.com/ya-enot/tendermint/consensus/types"
+	tmtypes "github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

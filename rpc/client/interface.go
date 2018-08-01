@@ -20,10 +20,10 @@ implementation.
 package client
 
 import (
-	data "github.com/tendermint/go-wire/data"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tmlibs/common"
+	data "github.com/ya-enot/go-wire/data"
+	ctypes "github.com/ya-enot/tendermint/rpc/core/types"
+	"github.com/ya-enot/tendermint/types"
+	cmn "github.com/ya-enot/tmlibs/common"
 )
 
 // ABCIClient groups together the functionality that principally

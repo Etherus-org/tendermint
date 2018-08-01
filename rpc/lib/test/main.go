@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"os"
 
-	rpcserver "github.com/tendermint/tendermint/rpc/lib/server"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	rpcserver "github.com/ya-enot/tendermint/rpc/lib/server"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 var routes = map[string]*rpcserver.RPCFunc{

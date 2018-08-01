@@ -11,15 +11,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tendermint/abci/example/counter"
-	"github.com/tendermint/abci/example/dummy"
-	abci "github.com/tendermint/abci/types"
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	"github.com/ya-enot/abci/example/counter"
+	"github.com/ya-enot/abci/example/dummy"
+	abci "github.com/ya-enot/abci/types"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 
-	cfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/types"
+	cfg "github.com/ya-enot/tendermint/config"
+	"github.com/ya-enot/tendermint/proxy"
+	"github.com/ya-enot/tendermint/types"
 
 	"github.com/stretchr/testify/require"
 )

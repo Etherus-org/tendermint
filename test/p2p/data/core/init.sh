@@ -3,12 +3,12 @@
 # Edit this script before "mintnet start" to change
 # the core blockchain engine.
 
-TMREPO="github.com/tendermint/tendermint"
+TMREPO="github.com/ya-enot/tendermint"
 BRANCH="master"
 
 go get -d $TMREPO/cmd/tendermint
 ### DEPENDENCIES (example)
-# cd $GOPATH/src/github.com/tendermint/abci
+# cd $GOPATH/src/github.com/ya-enot/abci
 # git fetch origin $BRANCH
 # git checkout $BRANCH
 ### DEPENDENCIES END

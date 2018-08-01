@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	"github.com/tendermint/go-wire/data"
-	tmpubsub "github.com/tendermint/tmlibs/pubsub"
-	tmquery "github.com/tendermint/tmlibs/pubsub/query"
+	"github.com/ya-enot/go-wire/data"
+	tmpubsub "github.com/ya-enot/tmlibs/pubsub"
+	tmquery "github.com/ya-enot/tmlibs/pubsub/query"
 )
 
 // Reserved event types

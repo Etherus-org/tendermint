@@ -7,8 +7,8 @@ import (
 
 	"github.com/pkg/errors"
 
-	cmn "github.com/tendermint/tmlibs/common"
-	"github.com/tendermint/tmlibs/log"
+	cmn "github.com/ya-enot/tmlibs/common"
+	"github.com/ya-enot/tmlibs/log"
 )
 
 type UPNPCapabilities struct {
