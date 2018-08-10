@@ -62,6 +62,7 @@
   version = "=1.2.1"
 
 [[constraint]]
+  source = "https://github.com/ya-enot/go-amino.git"
   name = "github.com/tendermint/go-amino"
   version = "=v0.10.1"
 

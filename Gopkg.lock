@@ -295,6 +295,7 @@
   revision = "d8387025d2b9d158cf4efb07e7ebf814bcce2057"
 
 [[projects]]
+  source = "https://github.com/ya-enot/go-amino.git"
   name = "github.com/tendermint/go-amino"
   packages = ["."]
   revision = "2106ca61d91029c931fd54968c2bb02dc96b1412"
