@@ -123,6 +123,12 @@ func (state State) MakeBlock(
 	block.AppHash = state.AppHash
 	block.LastResultsHash = state.LastResultsHash
 
+	proposer := state.LastValidators.GetProposer()
+
+	if proposer != nil {
+		block.Proposer = *proposer
+	}
+
 	return block, block.MakePartSet(state.ConsensusParams.BlockGossip.BlockPartSizeBytes)
 }
 
