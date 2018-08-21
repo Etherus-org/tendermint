@@ -3,7 +3,6 @@ GOTOOLS = \
 	github.com/golang/dep/cmd/dep \
 	gopkg.in/alecthomas/gometalinter.v2 \
 	github.com/gogo/protobuf/protoc-gen-gogo \
-	github.com/gogo/protobuf/gogoproto \
 	github.com/square/certstrap
 PACKAGES=$(shell go list ./...)
 INCLUDE = -I=. -I=${GOPATH}/src -I=${GOPATH}/src/github.com/gogo/protobuf/protobuf
@@ -64,8 +63,14 @@ dist:
 
 check_tools:
 	@# https://stackoverflow.com/a/25668869
-	@echo "Found tools: $(foreach tool,$(notdir $(GOTOOLS)),\
-        $(if $(shell which $(tool)),$(tool),$(error "No $(tool) in PATH")))"
+	@printf "Found tools:\n $(foreach tool,$(notdir $(GOTOOLS)),\
+		$(if $(shell which $(tool) 2>/dev/null),$(tool),$(if $(shell $(MAKE) get_tools),$(if $(shell which $(tool) 2>/dev/null),$(tool),\
+					$(error "No $(tool) in PATH")\
+				),\
+				$(error "Tools installation failed")\
+			)\
+		)\
+	\n)"
 
 get_tools:
 	@echo "--> Installing tools"
