@@ -227,7 +227,8 @@ func getBeginBlockValidatorInfo(block *types.Block, lastValSet *types.ValidatorS
 
 	// Sanity check that commit length matches validator set size -
 	// only applies after first block
-	if block.Height > 1 {
+	// TODO: In case of ethereum empty DB it compares each block against the last validators and panics! Need to do something with it
+	if false && block.Height > 1 {
 		precommitLen := len(block.LastCommit.Precommits)
 		valSetLen := len(lastValSet.Validators)
 		if precommitLen != valSetLen {

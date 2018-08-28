@@ -929,6 +929,10 @@ func (cs *ConsensusState) createProposalBlock() (block *types.Block, blockParts 
 	// Mempool validated transactions
 	txs := cs.mempool.Reap(cs.state.ConsensusParams.BlockSize.MaxTxs)
 	evidence := cs.evpool.PendingEvidence()
+
+	//FIXME: why cs.state differs from roundstate
+	cs.state.Validators = cs.Validators
+
 	block, parts := cs.state.MakeBlock(cs.Height, txs, commit, evidence)
 	return block, parts
 }

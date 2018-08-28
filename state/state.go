@@ -123,7 +123,7 @@ func (state State) MakeBlock(
 	block.AppHash = state.AppHash
 	block.LastResultsHash = state.LastResultsHash
 
-	proposer := state.LastValidators.GetProposer()
+	proposer := state.Validators.GetProposer()
 
 	if proposer != nil {
 		block.Proposer = *proposer

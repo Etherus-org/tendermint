@@ -6,10 +6,10 @@ import (
 	"github.com/spf13/cobra"
 
 	cfg "github.com/tendermint/tendermint/config"
+	cmn "github.com/tendermint/tendermint/libs/common"
 	"github.com/tendermint/tendermint/p2p"
 	"github.com/tendermint/tendermint/privval"
 	"github.com/tendermint/tendermint/types"
-	cmn "github.com/tendermint/tendermint/libs/common"
 )
 
 // InitFilesCmd initialises a fresh Tendermint Core instance.
@@ -29,12 +29,14 @@ func initFilesWithConfig(config *cfg.Config) error {
 	var pv *privval.FilePV
 	if cmn.FileExists(privValFile) {
 		pv = privval.LoadFilePV(privValFile)
-		logger.Info("Found private validator", "path", privValFile)
+		pv.Reset()
+		logger.Info("Found private validator and reset it", "path", privValFile)
 	} else {
 		pv = privval.GenFilePV(privValFile)
 		pv.Save()
 		logger.Info("Generated private validator", "path", privValFile)
 	}
+	logger.Info("This validator info: ", "Address", pv.GetAddress(), "PubKey", pv.GetPubKey())
 
 	nodeKeyFile := config.NodeKeyFile()
 	if cmn.FileExists(nodeKeyFile) {

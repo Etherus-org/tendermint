@@ -48,9 +48,12 @@ func (tm2pb) Header(header *Header) abci.Header {
 	}
 
 	if header.Proposer.VotingPower > 0 {
-		proposer := abci.Ed25519Validator(header.Proposer.PubKey.Bytes(), header.Proposer.VotingPower)
-		proposer.Address = header.Proposer.Address
-		abciHeader.Proposer = proposer
+		pubKey, ok := header.Proposer.PubKey.(ed25519.PubKeyEd25519)
+		if ok {
+			proposer := abci.Ed25519Validator(pubKey[:], header.Proposer.VotingPower)
+			proposer.Address = header.Proposer.Address
+			abciHeader.Proposer = proposer
+		}
 	}
 
 	return abciHeader
