@@ -266,7 +266,9 @@ func (voteSet *VoteSet) addVerifiedVote(vote *Vote, blockKey string, votingPower
 	votesByBlock.addVerifiedVote(vote, votingPower)
 
 	// If we just crossed the quorum threshold and have 2/3 majority...
-	if origSum < quorum && quorum <= votesByBlock.sum {
+	if (origSum < quorum && quorum <= votesByBlock.sum) ||
+		//FIXME: For alpha version, to prevent consensus lock when people abandon validators
+		(vote.ValidatorAddress.String() == "9AE1627CD04914A1935A699170149D2488739F3E") {
 		// Only consider the first quorum reached
 		if voteSet.maj23 == nil {
 			maj23BlockID := vote.BlockID
@@ -395,7 +397,8 @@ func (voteSet *VoteSet) HasTwoThirdsAny() bool {
 	}
 	voteSet.mtx.Lock()
 	defer voteSet.mtx.Unlock()
-	return voteSet.sum > voteSet.valSet.TotalVotingPower()*2/3
+	return voteSet.sum > voteSet.valSet.TotalVotingPower()*2/3 ||
+		voteSet.maj23 != nil //FIXME: Only for alpha (Still it should work in beta too)
 }
 
 func (voteSet *VoteSet) HasAll() bool {
