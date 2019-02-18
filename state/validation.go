@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tendermint/libs/db"
+	"github.com/tendermint/tendermint/types"
 )
 
 //-----------------------------------------------------
@@ -27,11 +27,10 @@ func validateBlock(stateDB dbm.DB, state State, block *types.Block) error {
 	}
 	/*	TODO: Determine bounds for Time
 		See blockchain/reactor "stopSyncingDurationMinutes"
-
-		if !block.Time.After(lastBlockTime) {
-			return errors.New("Invalid Block.Header.Time")
-		}
 	*/
+	if !block.Time.After(state.LastBlockTime) {
+		return errors.New("Invalid Block.Header.Time")
+	}
 
 	// validate prev block info
 	if !block.LastBlockID.Equals(state.LastBlockID) {
