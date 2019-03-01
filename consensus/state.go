@@ -686,8 +686,22 @@ func (cs *ConsensusState) handleTimeout(ti timeoutInfo, rs cstypes.RoundState) {
 func (cs *ConsensusState) handleTxsAvailable() {
 	cs.mtx.Lock()
 	defer cs.mtx.Unlock()
-	// we only need to do this for round 0
-	cs.enterPropose(cs.Height, 0)
+
+	logger := cs.Logger.With("height", cs.Height, "round", cs.Round)
+
+	intervalAgo := time.Now().Add(-sm.BlocksMinInterval + 1) //+1 to validate strict comparison
+	if cs.state.LastBlockTime.Before(intervalAgo) {
+		// we only need to do this for round 0
+		cs.enterPropose(cs.Height, 0)
+	} else {
+		needToWait := cs.state.LastBlockTime.Sub(intervalAgo)
+		if needToWait > sm.BlocksMinInterval {
+			needToWait = sm.BlocksMinInterval
+		}
+
+		logger.Info("Transactions are too fast, scheduling block in ", "duration", needToWait)
+		cs.scheduleTimeout(needToWait, cs.Height, 0, cstypes.RoundStepPropose)
+	}
 }
 
 //-----------------------------------------------------------------------------
@@ -931,7 +945,7 @@ func (cs *ConsensusState) createProposalBlock() (block *types.Block, blockParts 
 	evidence := cs.evpool.PendingEvidence()
 
 	//FIXME: why cs.state differs from roundstate
-	cs.state.Validators = cs.Validators
+	//cs.state.Validators = cs.Validators
 
 	block, parts := cs.state.MakeBlock(cs.Height, txs, commit, evidence)
 	return block, parts
@@ -1386,6 +1400,7 @@ func (cs *ConsensusState) defaultSetProposal(proposal *types.Proposal) error {
 
 	// Verify signature
 	if !cs.Validators.GetProposer().PubKey.VerifyBytes(proposal.SignBytes(cs.state.ChainID), proposal.Signature) {
+		cs.Logger.Error("Proposal is invalid", "CurrentProposer", cs.Validators.GetProposer(), "Proposal", proposal)
 		return ErrInvalidProposalSignature
 	}
 

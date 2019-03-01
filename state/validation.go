@@ -4,9 +4,15 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"time"
 
 	dbm "github.com/tendermint/tendermint/libs/db"
 	"github.com/tendermint/tendermint/types"
+)
+
+const (
+	//BlocksMinInterval - 1 second interval for the next block
+	BlocksMinInterval time.Duration = 1e9
 )
 
 //-----------------------------------------------------
@@ -28,7 +34,7 @@ func validateBlock(stateDB dbm.DB, state State, block *types.Block) error {
 	/*	TODO: Determine bounds for Time
 		See blockchain/reactor "stopSyncingDurationMinutes"
 	*/
-	if !block.Time.After(state.LastBlockTime) {
+	if !block.Time.After(state.LastBlockTime.Add(BlocksMinInterval - 1)) {
 		return errors.New("Invalid Block.Header.Time")
 	}
 

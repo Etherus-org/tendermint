@@ -252,7 +252,7 @@ func (valSet *ValidatorSet) VerifyCommit(chainID string, blockID BlockID, height
 
 	talliedVotingPower := int64(0)
 	round := commit.Round()
-	hasSuperPower := false
+	//hasSuperPower := false
 
 	for idx, precommit := range commit.Precommits {
 		// may be nil if validator skipped.
@@ -281,13 +281,13 @@ func (valSet *ValidatorSet) VerifyCommit(chainID string, blockID BlockID, height
 		talliedVotingPower += val.VotingPower
 
 		//FIXME: Only for Alpha to prevent consensus lock on abandoning validators
-		if val.Address.String() == "9AE1627CD04914A1935A699170149D2488739F3E" {
-			hasSuperPower = true
-		}
+		//if val.Address.String() == "9AE1627CD04914A1935A699170149D2488739F3E" {
+		//	hasSuperPower = true
+		//}
 	}
 
-	if talliedVotingPower > valSet.TotalVotingPower()*2/3 ||
-		hasSuperPower { //FIXME: Remove from Alpha
+	if talliedVotingPower > valSet.TotalVotingPower()*2/3 { // ||
+		//hasSuperPower { //FIXME: Remove from Alpha
 		return nil
 	}
 	return fmt.Errorf("Invalid commit -- insufficient voting power: got %v, needed %v",
