@@ -226,7 +226,7 @@ func (h *Header) Hash() cmn.HexBytes {
 		"Consensus":   aminoHasher(h.ConsensusHash),
 		"Results":     aminoHasher(h.LastResultsHash),
 		"Evidence":    aminoHasher(h.EvidenceHash),
-		//TODO: add Proposer here?
+		"Proposer":    aminoHasher(h.Proposer),
 	})
 }
 
