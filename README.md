@@ -1,4 +1,4 @@
-# Tendermint
+# Tendermint [![Build Status](https://travis-ci.org/Etherus-org/tendermint.svg?branch=dukei-develop)](https://travis-ci.org/Etherus-org/tendermint)
 
 [Byzantine-Fault Tolerant](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance)
 [State Machine Replication](https://en.wikipedia.org/wiki/State_machine_replication).
