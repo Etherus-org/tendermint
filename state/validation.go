@@ -12,7 +12,7 @@ import (
 
 const (
 	//BlocksMinInterval - 1 second interval for the next block
-	BlocksMinInterval time.Duration = 1e9
+	BlocksMinInterval time.Duration = 15e9
 )
 
 //-----------------------------------------------------
