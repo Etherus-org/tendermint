@@ -94,10 +94,13 @@ func Status() (*ctypes.ResultStatus, error) {
 			LatestBlockTime:   latestBlockTime,
 			CatchingUp:        consensusReactor.FastSync(),
 		},
-		ValidatorInfo: ctypes.ValidatorInfo{
-			Address:     pubKey.Address(),
-			PubKey:      pubKey,
-			VotingPower: votingPower,
+		ValidatorInfo: ctypes.ValidatorInfoEx{
+			ValidatorInfo: ctypes.ValidatorInfo{
+				Address:     pubKey.Address(),
+				PubKey:      pubKey,
+				VotingPower: votingPower,
+			},
+			PubKeyHex: pubKey.Bytes()[5:], //Marshal добавляет лишние байты
 		},
 	}
 
