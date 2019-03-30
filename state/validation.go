@@ -13,6 +13,8 @@ import (
 const (
 	//BlocksMinInterval - 1 second interval for the next block
 	BlocksMinInterval time.Duration = 15e9
+	//RightProposerBlock - The starting block of right proposer strategy
+	RightProposerBlock int64 = 1000
 )
 
 //-----------------------------------------------------

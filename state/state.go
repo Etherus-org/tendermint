@@ -107,6 +107,7 @@ func (state State) MakeBlock(
 	txs []types.Tx,
 	commit *types.Commit,
 	evidence []types.Evidence,
+	proposer *types.Validator,
 ) (*types.Block, *types.PartSet) {
 
 	// Build base block with block data.
@@ -122,8 +123,6 @@ func (state State) MakeBlock(
 	block.ConsensusHash = state.ConsensusParams.Hash()
 	block.AppHash = state.AppHash
 	block.LastResultsHash = state.LastResultsHash
-
-	proposer := state.Validators.GetProposer()
 
 	if proposer != nil {
 		block.Proposer = *proposer

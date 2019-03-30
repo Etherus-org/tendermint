@@ -947,7 +947,14 @@ func (cs *ConsensusState) createProposalBlock() (block *types.Block, blockParts 
 	//FIXME: why cs.state differs from roundstate
 	//cs.state.Validators = cs.Validators
 
-	block, parts := cs.state.MakeBlock(cs.Height, txs, commit, evidence)
+	var proposer *types.Validator
+	if cs.Height >= sm.RightProposerBlock {
+		proposer = cs.Validators.GetProposer() //Proposer of the current round state
+	} else {
+		proposer = cs.state.Validators.GetProposer() //Proposer of the round 0
+	}
+
+	block, parts := cs.state.MakeBlock(cs.Height, txs, commit, evidence, proposer)
 	return block, parts
 }
 
