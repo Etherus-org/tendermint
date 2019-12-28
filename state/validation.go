@@ -15,6 +15,8 @@ const (
 	BlocksMinInterval time.Duration = 15e9
 	//RightProposerBlock - The starting block of right proposer strategy
 	RightProposerBlock int64 = 1000
+	//BlocksMaxFuture - Maximum future block time
+	BlocksMaxFuture time.Duration = 29e9 //To match ethereum future block constant
 )
 
 //-----------------------------------------------------
@@ -38,6 +40,11 @@ func validateBlock(stateDB dbm.DB, state State, block *types.Block) error {
 	*/
 	if !block.Time.After(state.LastBlockTime.Add(BlocksMinInterval - 1)) {
 		return errors.New("Invalid Block.Header.Time")
+	}
+
+	//Do not allow too distant future blocks
+	if block.Time.After(time.Now().Add(BlocksMaxFuture)) {
+		return fmt.Errorf("Too future block time. Now %v, got %v", time.Now(), block.Time)
 	}
 
 	// validate prev block info

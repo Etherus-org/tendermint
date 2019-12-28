@@ -2,6 +2,7 @@ package state
 
 import (
 	"testing"
+	"time"
 
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tendermint/libs/db"
@@ -63,6 +64,12 @@ func TestValidateBlock(t *testing.T) {
 	// wrong validators hash fails
 	block = makeBlock(state, 1)
 	block.ValidatorsHash = []byte("wrong validators hash")
+	err = blockExec.ValidateBlock(state, block)
+	require.Error(t, err)
+
+	//Distant future block fails
+	block = makeBlock(state, 1)
+	block.Header.Time = time.Now().Add(BlocksMaxFuture * 2)
 	err = blockExec.ValidateBlock(state, block)
 	require.Error(t, err)
 }

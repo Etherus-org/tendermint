@@ -59,7 +59,8 @@ func makePathname() string {
 	}
 	// fmt.Println(p)
 	sep := string(filepath.Separator)
-	return strings.Replace(p, sep, "_", -1)
+	str := strings.Replace(p, sep, "_", -1)
+	return strings.Replace(str, ":", "_", -1)
 }
 
 func randPort() int {
